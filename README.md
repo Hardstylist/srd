@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-FRI 11 MAR 2022 at 1700 US EST
+SUN 13 MAR 2022 at 0800 US EDT
 ---
 
 ## SRD DMG Install
@@ -9,17 +9,17 @@ FRI 11 MAR 2022 at 1700 US EST
 SUMMARY
 ----
 - This Repo is __ahead__ of the Apple Repo 
-- This Repo corrects older Documentation used for Monterey and iOS 14
-- This Repo updates the XNU and other Settings for iOS 15
+- This Repo removes older Documentation used for Monterey and iOS 14
+- This Repo is Built with XNU-8019.41.5 and options Targeting for iOS 15
 - This Repo aka PR42 https://github.com/apple/security-research-device/pull/42
 - If you see unsuitable CT policy .. for this platform/device, rejecting signature
-- Do make clean; make install and AMFI Research should stop complaining
+    - Do make clean; make install and AMFI Research should stop complaining
 
 ## SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.2.1 (21D62) X86_64      | PASS          | PASS          | PASS          | PASS          
-| Build macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
+| macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
 | Install to iPhone 11 19E241    | PASS          | PASS          | PASS          | PASS
 | Install to iPhone 12 19E241    | PASS          | PASS          | PASS          | PASS 
 
@@ -27,8 +27,8 @@ SUMMARY
 ```
 Signed File: iPhone11,8,iPhone12,1_15.4_19E241_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
 Signed File: iPhone13,2,iPhone13,3_15.4_19E241_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
-Signed File: iPhone12,8,iPhone12,1_15.4_19E5241a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-Signed File: iPhone13,2,iPhone13,3_15.4_19E5241a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone11,8,iPhone12,1_15.4_19E5235a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone13,2,iPhone13,3_15.4_19E5235a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
 
 ## Prerequisites
