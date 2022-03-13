@@ -22,8 +22,6 @@ Signed File: iPhone13,2,iPhone13,3_15.4_19E5241a_Restore.ipsw | defaults write c
 - SIP Enabled
 - macOS 12.2.1 (21D62) X86_64 or M1 T8101 macOS 12.3 (21E230)
 - Xcode Version 13.3 (13E113)
-- Security Research Tools https://github.com/apple/security-research-device
-- brew install gnu-sed automake
 
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
