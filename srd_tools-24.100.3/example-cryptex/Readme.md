@@ -1,15 +1,9 @@
 # SRD Example Cryptex & DMG Source Build Repo for SRT 24.100.3
 
-This page details how to Build & Install the ./example-cryptex/ and add the Sanitizer Dylibs and toyboxunstripped.
+This page details how to Build & Install the ./example-cryptex/
 
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
-
-### Resources
-- Source: https://github.com/apple/security-research-device/tree/main/example-cryptex
-- DMG: https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
-- Install: https://github.com/xsscx/srd/tree/main/dmg#readme
-- Discussion: nvram settings disabling KTRR, CTRR and kASLR https://github.com/apple/security-research-device/discussions/2
 
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
