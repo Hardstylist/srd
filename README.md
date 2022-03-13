@@ -79,9 +79,10 @@ SRD Cryptex Log Collector
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/SecurityResearchTools_21C39/example-cryptex/srd-cryptex-troubleshooter.sh)"
 ```
 
-Makefile
+Files to Build with XNU-8019.41.5
 -----
-Hoyt's Makefile https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/Makefile
+- Makefile https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/Makefile
+- Settings https://github.com/xsscx/srd/blob/main/srd_tools-24.100.3/example-cryptex/build_env_test-xnu-8019.41.5.mk
 
 XNU Export
 ---
