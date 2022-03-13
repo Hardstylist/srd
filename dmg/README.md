@@ -87,7 +87,16 @@ srd-universal-cryptex.dmg: satisfies its Designated Requirement
 srd-universal-cryptex.dmg: explicit requirement satisfied
 ```
 
-# frida-ps Example Listing
+## Files to Build with XNU-8019.41.5
+- Makefile https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/Makefile
+- Settings https://github.com/xsscx/srd/blob/main/srd_tools-24.100.3/example-cryptex/build_env_test-xnu-8019.41.5.mk
+
+### XNU Export
+```
+export XNU_VERSION=xnu-8019.41.5
+```
+
+## frida-ps Example Listing
 ```
 frida-ps -Uai
 PID  Name                Identifier
