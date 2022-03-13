@@ -18,6 +18,12 @@ Signed File: iPhone13,2,iPhone13,3_15.4_19E241_Restore.ipsw | defaults write com
 Signed File: iPhone12,8,iPhone12,1_15.4_19E5241a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 Signed File: iPhone13,2,iPhone13,3_15.4_19E5241a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
+## Last Known Good Working Configuration(s)
+- SIP Enabled
+- macOS 12.2.1 (21D62) X86_64 or M1 T8101 macOS 12.3 (21E230)
+- Xcode Version 13.3 (13E113)
+- Security Research Tools https://github.com/apple/security-research-device
+- brew install gnu-sed automake
 
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
@@ -32,44 +38,6 @@ Signed File: iPhone13,2,iPhone13,3_15.4_19E5241a_Restore.ipsw | defaults write c
 - Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 15.4 Beta
 - Tested on macOS 11.6.x using SRT 20C80, macOS 12.x using 21C39 and Cryptex Manager from X86_64 and M1 T8101 Platforms
 
-## SRD Cryptex Log Collector
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/srd-cryptex-logcollector.sh)"
-```
-### SRD Cryptex Log Collector Example
-```
-Sat Feb  5 07:04:42 EST 2022
-kern.version: Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_X86_64
-kern.osversion: 21D49
-kern.iossupportversion: 15.3
-kern.osproductversion: 12.2
-kern.osproductversioncompat: 10.16
-kern.osproductversioncompat: 10.16
-/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
-udid                           name       build      BORD       CHIP       ECID
-00008030-001538D03C40012E      SRD0009    19E5209h   0x4        0x8030     0x1538d03c40012e
-00008101-001418DA3CC0013A      SRD0037    19E5209h   0xc        0x8101     0x1418da3cc0013a
-Apple clang version 13.1.6 (clang-1316.0.19.2)
-Target: x86_64-apple-darwin21.3.0
-Thread model: posix
-InstalledDir: /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-Darwin Cryptex Management Interface Version 2.0.0: Sun Dec 19 22:28:12 PST 2021; root:libcryptex_executables-169.80.2~9/cryptexctl/WEN_ETA_X86_64
-machdep.cpu.brand_string: Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz
-System Integrity Protection status: disabled.
-cryptexctl: flags = [none]
-cryptexctl: will re-exec: /usr/local/bin/cryptexctl.research
-cryptexctl.research: path = /usr/local/bin/cryptexctl.research
-MobileDevice version = 1368.60.4
-cryptexctl.research: argv[_main] =
-cryptexctl.research:   [0] = cryptexctl
-cryptexctl.research:   [1] = -v2
-cryptexctl.research:   [2] = -d2
-cryptexctl.research:   [3] = install
-cryptexctl.research:   [4] = --variant=research
-cryptexctl.research:   [5] = --persist
-cryptexctl.research:   [6] = --print-info
-cryptexctl.research:   [7] = ./com.example.cryptex.cxbd.signed
-```
 ## How To Build SRD Universal Cryptex DMG with frida, toybox unstripped, debugserver and Install to SRD
 ```
 cd example-cryptex
@@ -357,6 +325,44 @@ export CODE_TRACE_DATA_EXEC=0x7000008
 ofile=~/${1:-ipc.raw}
 ps -Ac | sed 's,\s*\([0-9][0-9]*\) .*[0-9]*:[0-9]*\.[0-9]* \(.*\), 00000000.0  0.0(0.0)  proc_exec  \1 0 0 0 0 0  \2,' > "${ofile}.txt"
 
+```
+## SRD Cryptex Log Collector
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/srd-cryptex-logcollector.sh)"
+```
+### SRD Cryptex Log Collector Example
+```
+Sat Feb  5 07:04:42 EST 2022
+kern.version: Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_X86_64
+kern.osversion: 21D49
+kern.iossupportversion: 15.3
+kern.osproductversion: 12.2
+kern.osproductversioncompat: 10.16
+kern.osproductversioncompat: 10.16
+/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+udid                           name       build      BORD       CHIP       ECID
+00008030-001538D03C40012E      SRD0009    19E5209h   0x4        0x8030     0x1538d03c40012e
+00008101-001418DA3CC0013A      SRD0037    19E5209h   0xc        0x8101     0x1418da3cc0013a
+Apple clang version 13.1.6 (clang-1316.0.19.2)
+Target: x86_64-apple-darwin21.3.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+Darwin Cryptex Management Interface Version 2.0.0: Sun Dec 19 22:28:12 PST 2021; root:libcryptex_executables-169.80.2~9/cryptexctl/WEN_ETA_X86_64
+machdep.cpu.brand_string: Intel(R) Core(TM) i7-8700B CPU @ 3.20GHz
+System Integrity Protection status: disabled.
+cryptexctl: flags = [none]
+cryptexctl: will re-exec: /usr/local/bin/cryptexctl.research
+cryptexctl.research: path = /usr/local/bin/cryptexctl.research
+MobileDevice version = 1368.60.4
+cryptexctl.research: argv[_main] =
+cryptexctl.research:   [0] = cryptexctl
+cryptexctl.research:   [1] = -v2
+cryptexctl.research:   [2] = -d2
+cryptexctl.research:   [3] = install
+cryptexctl.research:   [4] = --variant=research
+cryptexctl.research:   [5] = --persist
+cryptexctl.research:   [6] = --print-info
+cryptexctl.research:   [7] = ./com.example.cryptex.cxbd.signed
 ```
 
 #### Comments
