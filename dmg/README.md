@@ -1,4 +1,4 @@
-# SRD Example DMG Install
+# SRD Example Cryptex Build & DMG Installation
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
