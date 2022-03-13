@@ -1,6 +1,6 @@
 # SRD Example Cryptex & DMG Source Build Repo for SRT 24.100.3
----
-This SRT 24.100.3 Example DMG Repo is at least __1 PR__ https://github.com/apple/security-research-device/pull/42 _ahead_ of https://github.com/apple/security-research-device/tree/main/example-cryptex.
+
+This page details how to Build & Install the ./example-cryptex/ and add the Sanitizer Dylibs and toyboxunstripped.
 
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
@@ -19,7 +19,8 @@ This SRT 24.100.3 Example DMG Repo is at least __1 PR__ https://github.com/apple
 - brew install gnu-sed automake
 
 # SRD Source Build example-cryptex with toybox unstripped using this Repo
-- Step 1: Download this Repo that builds with xnu-7195.141.2
+- Step 1: Download this Repo that Builds with xnu-7195.141.2
+  - cd ./example-cryptex/ 
 - Step 2: Run build.sh as shown below
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh" 
@@ -158,8 +159,8 @@ Please note, you will need to keep the cryptex nonce in sync. The nonce hash is 
 with the `--BNCH` flag on `cryptexctl create`, and can be retrieved from the device
 with the `cryptexctl nonce` subcommand.
 
-#@ Troubleshooting
-##@ Log Collection
+### Troubleshooting
+#### Log Collection
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/SecurityResearchTools_21C39/example-cryptex/srd-cryptex-troubleshooter.sh)"
 ```
