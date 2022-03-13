@@ -9,7 +9,6 @@ SUN 13 MAR 2022 at 1845 US EDT
 SUMMARY
 ----
 - This Repo is __ahead__ of the Apple Repo 
-- This Repo removes older Documentation used for Monterey and iOS 14
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
 - This Repo aka PR42 https://github.com/apple/security-research-device/pull/42
 - If you see unsuitable CT policy .. for this platform/device, rejecting signature
