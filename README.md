@@ -23,6 +23,11 @@ SUMMARY
 | Install to iPhone 11 19E241    | PASS          | PASS          | PASS          | PASS
 | Install to iPhone 12 19E241    | PASS          | PASS          | PASS          | PASS 
 
+## Last Known Good Working Configuration(s)
+- SIP Enabled
+- macOS 12.2.1 (21D62) X86_64 or M1 T8101 macOS 12.3 (21E230)
+- Xcode Version 13.3 (13E113)
+
 ### Lastest IPSW + Cryptex Installations 
 ```
 Signed File: iPhone11,8,iPhone12,1_15.4_19E241_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
