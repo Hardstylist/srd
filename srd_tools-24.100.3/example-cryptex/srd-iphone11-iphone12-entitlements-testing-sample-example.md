@@ -1,12 +1,15 @@
 ## SRD PR42
 
+Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
+
 ### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
-| macOS 12.2.1 (21D62) X86_64      | PASS          | PASS          | PASS          | PASS          
-| Build macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
-| Install to iPhone 11 19E241    | PASS          | PASS          | PASS          | PASS
-| Install to iPhone 12 19E241    | PASS          | PASS          | PASS          | PASS 
+| macOS 12.3 (21E230) X86_64       | PASS          | PASS          | PASS          | PASS          
+| macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 19E241    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
+| T8101 Install to iPhone 12 19E241    | PASS          | PASS          | PASS          | PASS 
+
 
 #### Comment
 ```
