@@ -1,5 +1,4 @@
 ### Contribute to the iPhone 11 & iPhone 12 Register Fuzzing Project
--Note that this Summar Page will Update Frequently with Results 
 
 Reference: M1 Apple Silicon SPRR Permission Checks https://github.com/xsscx/macos-research/tree/main/sprr
 
