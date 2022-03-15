@@ -3,6 +3,8 @@ MON 14 MAR 2022 at 1942 US EDT
 ---
 - macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
     - X86_64 Workaround: CryptexManager
+- Error: manifest constraint violated: BORD: 13
+    - com.apple.cryptex ==  firmware execution failed: 13: Permission denied 
 ## SRD DMG Install
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
