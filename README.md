@@ -5,6 +5,7 @@ MON 14 MAR 2022 at 1942 US EDT
     - X86_64 Workaround: CryptexManager
 - Error: manifest constraint violated: BORD: 13
     - com.apple.cryptex ==  firmware execution failed: 13: Permission denied 
+    - MobileStorageMounter Failed to install cryptex (<private>): 13 (Permission denied)
 ## SRD DMG Install
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
