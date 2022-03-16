@@ -157,15 +157,13 @@ with the `--BNCH` flag on `cryptexctl create`, and can be retrieved from the dev
 with the `cryptexctl nonce` subcommand.
 
 ### Troubleshooting
-#### Log Collection
+#### Log Collection & drop to lldb
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/SecurityResearchTools_21C39/example-cryptex/srd-cryptex-troubleshooter.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/srd-cryptex-troubleshooter.sh" 
 ```
 ### Enable verbose logging with -v, -d and redirect from the system log to stderr with -ldt
-```
-cryptexctl -v9 -d9 -ldt install --print-info ./com.example.cryptex.cptx (20C80)
-OR 
-cryptexctl -v4 -d4  install --variant=research --persist --print-info ./com.example.cryptex.cxbd.signed (21C39)
+``` 
+cryptexctl -v4 -d4  install --variant=research --persist --print-info ./com.example.cryptex.cxbd.signed (srd_tools-24.100.3)
 ```
 ### Collect logs from the device. The -E is so we capture the CRYPTEXCTL_UDID env var.
 ```
