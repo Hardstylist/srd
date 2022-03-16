@@ -28,4 +28,5 @@ echo "====================================="
 cat srd-cryptex-troubleshooter.log
 echo "Check for cryptex install on SRD"
 cryptexctl list
-echo "SRD Cryptex Log Collector Stop"
+echo "starting... \n lldb -- cryptexctl install -p -l  --variant=research --persist com.example.cryptex.cxbd.signed"
+lldb -- cryptexctl install -p -l  --variant=research --persist com.example.cryptex.cxbd.signed
