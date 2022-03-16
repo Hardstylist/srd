@@ -1,6 +1,7 @@
 ## SRD PR42
 
 Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
+- X86_64 Workaround: [CryptexManager](https://github.com/pinauten/CryptexManager)
 
 ### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
