@@ -36,8 +36,8 @@ Signed File: iPhone13,2,iPhone13,3_15.4_19E5241a_Restore.ipsw | defaults write c
 
 ## SRD DMG Testing
 - Universal cryptex for iPhone 11 and iPhone 12 SRD Models 
-- Tested on the iPhone 11 for all IPSW from the iOS 14.3 floor for the iPhone 11 up to the latest iOS 15.4 Beta 
-- Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 15.4 Beta
+- Tested on the iPhone 11 for all IPSW from the iOS 14.3 floor for the iPhone 11 up to the latest iOS 15.4
+- Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 15.4
 - Tested on macOS 11.6.x using SRT 20C80, macOS 12.x using 21C39 and Cryptex Manager from X86_64 and M1 T8101 Platforms
 
 ## How To Build SRD Universal Cryptex DMG with frida, toybox unstripped, debugserver and Install to SRD
