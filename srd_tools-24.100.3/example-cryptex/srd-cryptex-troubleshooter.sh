@@ -18,4 +18,5 @@ cryptexctl version >> srd-cryptex-troubleshooter.log 2>&1
 sysctl -a | grep brand >> srd-cryptex-troubleshooter.log 2>&1
 csrutil status >> srd-cryptex-troubleshooter.log 2>&1
 echo "starting... \n lldb -- cryptexctl install -p -l  --variant=research --persist com.example.cryptex.cxbd.signed"
+echo "\n then type run, example: (lldb) run"
 lldb -- cryptexctl install -p -l  --variant=research --persist com.example.cryptex.cxbd.signed
