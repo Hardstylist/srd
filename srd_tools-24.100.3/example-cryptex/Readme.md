@@ -163,7 +163,7 @@ with the `cryptexctl nonce` subcommand.
 ```
 ### Enable verbose logging with -v, -d and redirect from the system log to stderr with -ldt
 ``` 
-cryptexctl -v4 -d4  install --variant=research --persist --print-info ./com.example.cryptex.cxbd.signed (srd_tools-24.100.3)
+cryptexctl -v4 -d4 -ldt install --variant=research --persist --print-info ./com.example.cryptex.cxbd.signed (srd_tools-24.100.3)
 ```
 ### Collect logs from the device. The -E is so we capture the CRYPTEXCTL_UDID env var.
 ```
