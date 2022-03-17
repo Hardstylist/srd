@@ -19,4 +19,5 @@ CryptexManager create -i com.example.cryptex -v 1.3.3.7  ~/iphone12/srd-universa
 CryptexManager install /tmp/cptx
 CryptexManager list
 hdiutil detach /Volumes/com.example.cryptex.dstroot
+rm -rf /tmp/cptx
 echo "done..."
