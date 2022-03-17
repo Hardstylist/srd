@@ -1,6 +1,9 @@
 #!/bin/sh
 echo "umount com.example.cryptex"
 cryptexctl uninstall com.example.cryptex
+echo "Running make clean; make all.... then install with CryptexManger"
+make clean
+make all
 rm -rf srd-universal-cryptex.dmg
 echo "Changing to toybox unstripped"
 chmod 775 src/toybox/toybox-src/generated/unstripped/toybox
