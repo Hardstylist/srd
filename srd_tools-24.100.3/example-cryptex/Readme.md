@@ -18,11 +18,17 @@ This page details how to Build & Install the ./example-cryptex/
 # SRD Source Build example-cryptex with toybox unstripped using this Repo
 - Step 1: Download this Repo that Builds with xnu-7195.141.2
   - cd ./example-cryptex/ 
-- Step 2: Run build.sh as shown below
+- Step 2 - M1: Run build.sh as shown below on M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh" 
 ```
-## SRT Canned Instructions 
+
+- Step 2 - X86_64: Run build.sh as shown below on X86_64
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh" 
+```
+
+## Security Research Tools (SRT) 24.100.3 Canned Instructions 
 
 0. Install the prerequisites and select your Xcode with `xcode-select(1)`.
 1. Plug in your Security Research Device
