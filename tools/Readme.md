@@ -1,6 +1,6 @@
 # SRD Tools for ./example-cryptex/
 
-Note: These are 3rd Party Code that I have compiled to binary form to aid in the installation of a Cryptex to an Apple Security Research Device
+Note: These are 3rd Party Code compiled to binary form to aid in the installation of a Cryptex to an Apple Security Research Device
 
 ## 3rd Party Tool Inventory
 
