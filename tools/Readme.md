@@ -4,8 +4,8 @@ Note: These are 3rd Party Code compiled to binary form to aid in the installatio
 
 ## 3rd Party Tool Inventory
 
-[CryptexManager](https://github.com/pinauten/CryptexManager)
-- Cryptex Manager offers Stability and Continuity for Cryptex Installation
+[CryptexManager for X86_64](https://github.com/pinauten/CryptexManager)
+- Cryptex Manager for X86_64 offers Stability and Continuity for Cryptex Installation
 
 ### Comment
 
