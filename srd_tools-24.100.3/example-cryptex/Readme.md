@@ -23,7 +23,7 @@ This page details how to Build & Install the ./example-cryptex/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh" 
 ```
 
-- Step 2 - X86_64: Run build.sh as shown below on X86_64
+- Step 2 - X86_64: Run cryptexmanager-install.sh as shown below on X86_64
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh" 
 ```
