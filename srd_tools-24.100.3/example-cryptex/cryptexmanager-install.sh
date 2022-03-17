@@ -14,8 +14,8 @@ echo "running.. hdiutil create srd-universal-cryptex.dmg"
 hdiutil create -fs hfs+ -srcfolder com.example.cryptex.dstroot srd-universal-cryptex.dmg
 echo "running.. hdiutil attach srd-universal-cryptex.dmg"
 hdiutil attach srd-universal-cryptex.dmg
-echo "Installing a Cryptex with CryptexManager\n\n Using CryptexManager create -i com.example.cryptex -v 1.3.3.7  ~/iphone12/srd-universal-cryptex.dmg /Volumes/com.example.cryptex.dstroot /tmp/cptx\n\n"
-CryptexManager create -i com.example.cryptex -v 1.3.3.7  ~/iphone12/srd-universal-cryptex.dmg /Volumes/com.example.cryptex.dstroot /tmp/cptx
+echo "Installing a Cryptex with CryptexManager\n\n Using CryptexManager create -i com.example.cryptex -v 1.3.3.7  srd-universal-cryptex.dmg /Volumes/com.example.cryptex.dstroot /tmp/cptx\n\n"
+CryptexManager create -i com.example.cryptex -v 1.3.3.7  srd-universal-cryptex.dmg /Volumes/com.example.cryptex.dstroot /tmp/cptx
 CryptexManager install /tmp/cptx
 CryptexManager list
 hdiutil detach /Volumes/com.example.cryptex.dstroot
