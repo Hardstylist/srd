@@ -20,7 +20,7 @@ This page details how to Build & Install the ./example-cryptex/
   - cd ./example-cryptex/ 
 - Step 2 - M1: Run build.sh as shown below on M1 T8101
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh" 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh)" 
 ```
 
 - Step 2 - X86_64: Run cryptexmanager-install.sh as shown below on X86_64
