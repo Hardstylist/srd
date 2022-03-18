@@ -183,7 +183,7 @@ cryptexctl log show -- --archive ./system_logs.logarchive
 
 #### Log Collection & drop to Xcode
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/srd-cryptex-xcdebug.sh" 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/srd-cryptex-xcdebug.sh)" 
 ```
 
 ## Building
