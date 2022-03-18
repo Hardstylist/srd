@@ -175,6 +175,10 @@ sudo -E cryptexctl log collect
 ```
 cryptexctl log show -- --archive ./system_logs.logarchive
 ```
+#### Log Collection & cat TXT File
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/srd-cryptex-logcollector.sh)"
+```
 
 #### Log Collection & drop to lldb
 ```
