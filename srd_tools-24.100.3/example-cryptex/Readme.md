@@ -163,10 +163,6 @@ with the `--BNCH` flag on `cryptexctl create`, and can be retrieved from the dev
 with the `cryptexctl nonce` subcommand.
 
 ### Troubleshooting
-#### Log Collection & drop to lldb
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/srd-cryptex-troubleshooter.sh" 
-```
 ### Enable verbose logging with -v, -d and redirect from the system log to stderr with -ldt
 ``` 
 cryptexctl -v4 -d4 -ldt install --variant=research --persist --print-info ./com.example.cryptex.cxbd.signed (srd_tools-24.100.3)
@@ -178,6 +174,16 @@ sudo -E cryptexctl log collect
 ### View the logs from the archive
 ```
 cryptexctl log show -- --archive ./system_logs.logarchive
+```
+
+#### Log Collection & drop to lldb
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/srd-cryptex-troubleshooter.sh" 
+```
+
+#### Log Collection & drop to Xcode
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/srd-cryptex-xcdebug.sh" 
 ```
 
 ## Building
