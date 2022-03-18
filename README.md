@@ -79,7 +79,7 @@ Signed File: iPhone13,2,iPhone13,3_15.4_19E5235a_Restore.ipsw | defaults write c
 SRD Cryptex Log Collector
 ---
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/SecurityResearchTools_21C39/example-cryptex/srd-cryptex-troubleshooter.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/SecurityResearchTools_21C39/example-cryptex/srd-cryptex-logcollector.sh)"
 ```
 
 # Hosts
