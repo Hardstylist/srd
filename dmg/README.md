@@ -7,8 +7,6 @@ X86_64
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
 ```
-   
-```
 
 Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
 - X86_64 Workaround: [CryptexManager](https://github.com/pinauten/CryptexManager)
