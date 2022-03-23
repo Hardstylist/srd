@@ -7,9 +7,15 @@ FRI 18 MAR 2022 at 0951 US EDT
     - com.apple.cryptex ==  firmware execution failed: 13: Permission denied 
     - MobileStorageMounter Failed to install cryptex (<private>): 13 (Permission denied)
 ## SRD DMG Install
+M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
+X86_64 
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
+```
+    
 SUMMARY
 ----
 - This Repo is __ahead__ of the Apple Repo 
