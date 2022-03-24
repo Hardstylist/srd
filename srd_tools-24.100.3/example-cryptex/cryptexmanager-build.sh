@@ -19,5 +19,5 @@ CryptexManager create -i com.example.cryptex -v 1.3.3.7  srd-universal-cryptex.d
 CryptexManager install /tmp/cptx
 CryptexManager list
 hdiutil detach /Volumes/com.example.cryptex.dstroot
-rm -rf /tmp/cptx
+rm -rf /tmp/cptx com.example.cryptex.cxbd
 echo "done..."
