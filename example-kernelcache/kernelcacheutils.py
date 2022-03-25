@@ -124,8 +124,8 @@ def main():
     if args.command == 'patch':
         data = args.KERNELCACHE.read_bytes()
         find = b'Darwin Kernel Version '
-        hacked = b'Custom Kernel Cache iPhone13,2,iPhone13,3_15.4_19E241 SRD0037'
-        replaced = data.replace(find, hacked)
+        custom = b'CopyPasta Edition Kernel Cache'
+        replaced = data.replace(find, custom)
         args.PATCHED_KERNELCACHE.write_bytes(replaced)
         # Once this is flashed, run `uname -a` on the device and see our glorious hackings
 
