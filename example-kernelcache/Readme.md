@@ -1,5 +1,13 @@
 # Patching and booting a KernelCache
 
+Updated: FRI 25 MAR 2022 
+```
+srdutil: unknown option: --kernel-cache
+```
+Ref: https://github.com/apple/security-research-device/issues/56 
+
+---
+
 The Security Research Device allows flashing a custom kernelcache
 using the personalisation system and `srdutil(1)`.
 
