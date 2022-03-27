@@ -2,13 +2,41 @@
 
 Updated: SAT 26 MAR 2022 
 
-Works 100%
 ```
 uname -a
 Darwin iPhone 21.4.0 CopyPasta Kernel Cache21.4.0: Mon Feb 21 21:27:55 PST 2022; root:xnu-8020.102.3~1/RELEASE_ARM64_T8101 iPhone13,2 Toybox
 Sat Mar 26 17:59:16 PDT 2022
 ```
 
+## SUMMARY
+
+Steps to successful Kernel Cache Install on iPhone 12
+-------
+Step 1: Read https://github.com/apple/security-research-device/tree/main/example-kernelcache and complete the steps to generate your first kernel cache.
+
+Step 2: Use the example command line:
+```
+defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
+killall Finder
+srdutil restore -v -s -e 0x1418da3cc0013a -K=/Users/xss/iphone12/example-kernelcache/kernelcache.patched.image4  -i /Users/xss/iphone12/example-kernelcache/iPhone13,2,iPhone13,3_15.4_19E241_Restore.ipsw
+```
+
+Step 3:
+```
+Install cryptex
+```
+
+Step 4:
+```
+ssh to srd
+```
+
+Step 5:
+```
+uname -a
+CopyPasta Kernel Cache
+```
+-----
 The Security Research Device allows flashing a custom kernelcache
 using the personalisation system and `srdutil(1)`.
 
