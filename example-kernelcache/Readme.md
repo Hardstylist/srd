@@ -1,8 +1,12 @@
 # Patching and booting a KernelCache
 
-Updated: FRI 25 MAR 2022 
+Updated: SAT 26 MAR 2022 
+
+Works 100%
 ```
-srdutil: unknown option: --kernel-cache
+uname -a
+Darwin iPhone 21.4.0 CopyPasta Kernel Cache21.4.0: Mon Feb 21 21:27:55 PST 2022; root:xnu-8020.102.3~1/RELEASE_ARM64_T8101 iPhone13,2 Toybox
+Sat Mar 26 17:59:16 PDT 2022
 ```
 Ref: https://github.com/apple/security-research-device/issues/56 
 
