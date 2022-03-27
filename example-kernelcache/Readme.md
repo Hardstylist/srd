@@ -12,7 +12,7 @@ Sat Mar 26 17:59:16 PDT 2022
 
 Steps to successful Kernel Cache Install on iPhone 12 SRD
 -------
-Step 1: Read https://github.com/apple/security-research-device/tree/main/example-kernelcache and complete the steps to generate your first kernel cache.
+Step 1: Read this Page and complete the steps to generate your first kernel cache.
 
 Step 2: Use the example command line:
 ```
