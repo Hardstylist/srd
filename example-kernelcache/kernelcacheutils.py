@@ -124,7 +124,7 @@ def main():
     if args.command == 'patch':
         data = args.KERNELCACHE.read_bytes()
         find = b'Darwin Kernel Version '
-        custom = b'CopyPasta Edition Kernel Cache'
+        custom = b'CopyPasta Edition Kernel Cache '
         replaced = data.replace(find, custom)
         args.PATCHED_KERNELCACHE.write_bytes(replaced)
         # Once this is flashed, run `uname -a` on the device and see our glorious hackings
