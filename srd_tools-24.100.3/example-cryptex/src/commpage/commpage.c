@@ -1,9 +1,3 @@
-/**
- * macOS 12.x Read the commpage
- * Copyright (C) 2022 David Hoyt
- *
- **/
-
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
