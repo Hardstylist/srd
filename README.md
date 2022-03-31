@@ -29,8 +29,8 @@ SUMMARY
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.3 (21E230) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 19E241    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
-| T8101 Install to iPhone 12 19E241    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 19E258    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
+| T8101 Install to iPhone 12 19E258    | PASS          | PASS          | PASS          | PASS 
 
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
