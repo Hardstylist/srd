@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-THU 31 MAR 2022 at 1536 US EDT
+THU 31 MAR 2022 at 1715 US EDT
 ---
 - macOS 12.3.1 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
     - X86_64 Workaround: [CryptexManager](https://github.com/pinauten/CryptexManager)
