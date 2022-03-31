@@ -16,16 +16,16 @@ Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.3 (21E230) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 19E241    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
-| T8101 Install to iPhone 12 19E241    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 19E258    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
+| T8101 Install to iPhone 12 19E258    | PASS          | PASS          | PASS          | PASS 
 
 
 ### Lastest IPSW + Cryptex Installations 
 ```
-Signed File: iPhone11,8,iPhone12,1_15.4_19E241_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
-Signed File: iPhone13,2,iPhone13,3_15.4_19E241_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
-Signed File: iPhone12,8,iPhone12,1_15.4_19E5241a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-Signed File: iPhone13,2,iPhone13,3_15.4_19E5241a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone11,8,iPhone12,1_15.4.1_19E258_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
+Signed File: iPhone13,2,iPhone13,3_15.4.1_19E258_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
+Signed File: iPhone11,8,iPhone12,1_15.4_19E5235a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone13,2,iPhone13,3_15.4_19E5235a_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
