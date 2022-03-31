@@ -1,6 +1,6 @@
 # SRD Example Cryptex & DMG Source Build Repo for SRT 24.100.3
 
-14-MAR-2022 Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
+31-MAR-2022 Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
 - X86_64 Workaround: [CryptexManager](https://github.com/pinauten/CryptexManager)
 
 This page details how to Build & Install the ./example-cryptex/
