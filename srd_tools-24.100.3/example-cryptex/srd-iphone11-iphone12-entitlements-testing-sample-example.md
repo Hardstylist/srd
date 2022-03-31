@@ -1,8 +1,8 @@
 # SRD PR42, 48 & 49 | unsuitable CT policy 0x8 for this platform/device, rejecting signature
 
-Last Updated: WEB 22 MAR 2022
+Last Updated: THU 31 MAR 2022 1715 EDT
 
-Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
+Note: macOS 12.3.1 (21E258) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
 - X86_64 Workaround: [CryptexManager](https://github.com/pinauten/CryptexManager)
 
 ### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
@@ -10,8 +10,8 @@ Note: macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.3 (21E230) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 19E241    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
-| T8101 Install to iPhone 12 19E241    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 19E258    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
+| T8101 Install to iPhone 12 19E258    | PASS          | PASS          | PASS          | PASS 
 
 
 #### Comment
