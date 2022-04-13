@@ -1,8 +1,8 @@
 # Welcome to Hoyt's SRD Repo
-THU 31 MAR 2022 at 1715 US EDT
+WED 13 APR 2022 at 0900 US EDT
 ---
 - macOS 12.3.1 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
-    - X86_64 Workaround: [CryptexManager](https://github.com/pinauten/CryptexManager)
+    - [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
 - cryptexctl X86_64 Error: manifest constraint violated: BORD: 13
     - com.apple.cryptex ==  firmware execution failed: 13: Permission denied 
     - MobileStorageMounter Failed to install cryptex (<private>): 13 (Permission denied)
