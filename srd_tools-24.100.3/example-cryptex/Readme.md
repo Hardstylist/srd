@@ -1,7 +1,11 @@
 # SRD Example Cryptex & DMG Source Build Repo for SRT 24.100.3
 
-WED 13 APR 2022 at 0900 US EDT
+SUN 1 MAY 2022 at 0600 US EDT
 ---
+1. Recent Updates to Dropbear and Toybox are causing SSH pain to the SRD. Using the pre-built DMG's from the April 6, 2022 as Linked below solve the cryptex build and installation using arm64e. TTBOMN, X86_64 signings and installation from cryptex is DOA, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25.
+
+2. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. Hopefully the mothership will catchup soon with fixes this will make this exercise m00t.
+
 - macOS 12.3.1 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
     - [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
 
