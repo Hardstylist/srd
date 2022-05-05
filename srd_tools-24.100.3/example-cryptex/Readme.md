@@ -2,12 +2,19 @@
 
 SUN 1 MAY 2022 at 0600 US EDT
 ---
-1.On arm64e, building the default Apple example-cryptex fails. Conftest is the issue with invalid code signature, which makes the dropbear build useless for SRD. Use the pre-built DMG's using arm64e. Also, cryptex personalizations from X86_64 result with a Crash, see Issues #26 & #25. Creating a workaround now() for a fix. Use pre-built DMG's and install from arm64e only since X86_64 doesn't work for cryptexctl or CryptexManager due to AMFIResearch Complaints.
+1. Building the default Apple example-cryptex fails 
+2. Posted a quick workaround for dropbear and its configure.ac. 
+3. Use the pre-built DMG's using arm64e. 
+4. Cryptex personalizations from X86_64 result with a Crashwhen using cryptexctl, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25. Use arm64e, X86_64 is a special snowflake.
+5. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. Hopefully the mothership will catchup soon with fixes this will make this exercise m00t.
 
-2. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. Hopefully the mothership will catchup soon with fixes this will make this exercise m00t.
-
+X86_64 Bugs du Jour for cryptexctl
+------------
 - macOS 12.3.1 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
     - [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
+- cryptexctl X86_64 Error: manifest constraint violated: BORD: 13
+    - com.apple.cryptex ==  firmware execution failed: 13: Permission denied 
+    - MobileStorageMounter Failed to install cryptex (<private>): 13 (Permission denied)
 
 This page details how to Build & Install the ./example-cryptex/
 
