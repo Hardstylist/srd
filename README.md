@@ -1,7 +1,7 @@
 # Welcome to Hoyt's SRD Repo
-SUN 1 MAY 2022 at 0600 US EDT
+THU 5 MAY 2022 at 0600 US EDT
 ---
-1. Recent Updates to Dropbear and Toybox are causing SSH pain to the SRD. Use the pre-built DMG's using arm64e. TTBOMN, X86_64 signings and installation from cryptex is DOA, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25.
+1. On arm64e, building the default Apple example-cryptex fails. Conftest is the issue with invalid code signature, which makes the dropbear build useless for SRD. Use the pre-built DMG's using arm64e. Also, cryptex personalizations from X86_64 result with a Crash, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25. Creating a workaround now() for a fix. Use pre-built DMG's and install from arm64e only since X86_64 doesn't work ffor cryptexctl or CryptexManager due to AMFIResearch Complaints.
 
 2. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. Hopefully the mothership will catchup soon with fixes this will make this exercise m00t.
 
