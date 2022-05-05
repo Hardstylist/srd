@@ -1,10 +1,14 @@
 # Welcome to Hoyt's SRD Repo
 THU 5 MAY 2022 at 0600 US EDT
 ---
-1. On arm64e, building the default Apple example-cryptex fails. Posted a quick workaround for dropbear and its configure.ac. Use the pre-built DMG's using arm64e. Also, cryptex personalizations from X86_64 result with a Crash, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25. Creating a workaround now() for a fix. Use arm64e, X86_64 is a special snowflake.
+1. Building the default Apple example-cryptex fails 
+2. Posted a quick workaround for dropbear and its configure.ac. 
+3. Use the pre-built DMG's using arm64e. 
+4. Cryptex personalizations from X86_64 result with a Crashwhen using cryptexctl, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25. Use arm64e, X86_64 is a special snowflake.
+5. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. Hopefully the mothership will catchup soon with fixes this will make this exercise m00t.
 
-2. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. Hopefully the mothership will catchup soon with fixes this will make this exercise m00t.
-
+X86_64 Bugs du Jour for cryptexctl
+------------
 - macOS 12.3.1 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
     - [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
 - cryptexctl X86_64 Error: manifest constraint violated: BORD: 13
