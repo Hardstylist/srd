@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-SUN 1 MAY 2022 at 1427 US EDT
+THU 5 MAY 2022 at 1642 US EDT
 ---
 1. Building the default Apple example-cryptex fails 
 2. Posted a quick workaround for dropbear and its configure.ac
