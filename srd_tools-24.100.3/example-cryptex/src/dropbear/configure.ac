@@ -1,4 +1,5 @@
 #                                               -*- Autoconf -*-
+# Modified by dhoyt for Apple Security Research Device
 # Process this file with autoconf and autoheader to produce a configure script.
 
 # This Autoconf file was cobbled from various locations. In particular, a bunch
