@@ -1,8 +1,8 @@
 # SRD Example Cryptex & DMG Source Build Repo for SRT 24.100.3
 
-SUN 1 MAY 2022 at 1427 US EDT
+THU 5 MAY 2022 at 1641 US EDT
 ---
-1. Building the default Apple example-cryptex fails 
+1. Building the default Apple example-cryptex fails
 2. Posted a quick workaround for dropbear and its configure.ac
 3. Use the pre-built DMG's using arm64e
 4. Cryptex personalizations from X86_64 result with a Crash when using cryptexctl, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25. Use arm64e, X86_64 is a special snowflake.
