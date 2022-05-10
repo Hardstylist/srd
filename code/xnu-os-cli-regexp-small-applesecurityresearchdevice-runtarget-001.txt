@@ -68,8 +68,10 @@ Error while writing verifier file
 Explicitly trapping into debugger
 Fail
 Failed
+failed to
 Failed to convert signature from
 Failed to fetch
+failed to pass date test
 Failed to resolve
 Falling back to regular open()
 Fault hit memory shortage
