@@ -3,16 +3,18 @@ THU 12 MAY 2022 at 0600 US EDT
 ---
 1. Building the default Apple example-cryptex fails, on arm64e, because of dropbear build macros that won't grab headers to permit ssh login
     - conftest crashes in arm64e are due to obsolete macros for dropbear and configure.ac
+    - https://raw.githubusercontent.com/xsscx/srd/main/crashes/conftest-2022-05-05-arm64e.ips
+2. DIFF
 ```
 diff src/dropbear/dropbear-src/configure.ac ~/iphone11/src/dropbear/dropbear-src/configure.ac
 1a2
-> # Modified by dhoyt for Apple Security Research Device
+>  Modified by dhoyt for Apple Security Research Device
 382c383
 < AC_HEADER_TIME
 ---
 > AC_HEADER_STDC
 ```
-    - https://raw.githubusercontent.com/xsscx/srd/main/crashes/conftest-2022-05-05-arm64e.ips
+
 3. Posted a quick workaround for dropbear and its configure.ac
     - https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/src/dropbear/configure.ac
 4. Use the pre-built DMG's using arm64e
