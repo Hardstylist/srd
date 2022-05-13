@@ -92,6 +92,7 @@ int main(int argc, char **argv)
   if (gToolName != 0) gToolName++;
   else gToolName = argv[0];
 
+// Modified by dhoyt for Apple Security Research Device
   result = IOMainPort(bootstrap_port, &masterPort);
   if (result != KERN_SUCCESS) {
     errx(1, "Error getting the IOMaster port: %s",
