@@ -2,7 +2,21 @@
 
 ## Comment
 
-dropbear will work fine with the quick changes in configure.ac. Will do a fixup at some point soon to fix the automated build pipeline. There are a few depreciated macros that cause Headers to not be included, thus the ssh login issue when building on arm64e. This configure.ac will resolve the issue, Edit your Makefile, copy it in at the right point, and automagically the build pipeline works, and no arm64e crashes for autoconf.
+It has been found that the configure.ac for dropbear contains depreciated macros that won't grab the right headers to allow for ssh login to the SRD. 
+
+FIX: Use the example configure.ac provided in this Repo
+
+```
+diff src/dropbear/dropbear-src/configure.ac ~/iphone11/src/dropbear/dropbear-src/configure.ac
+1a2
+>  Modified by dhoyt for Apple Security Research Device
+382c383
+< AC_HEADER_TIME
+---
+> AC_HEADER_STDC
+```
+
+----
 
 [Dropbear](https://matt.ucc.asn.au/dropbear/dropbear.html) is a tiny SSH server with few external dependencies.
 
