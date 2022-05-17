@@ -31,7 +31,7 @@ This page details how to Build & Install the ./example-cryptex/
 - macOS 12.2.1 (21D62) X86_64 or M1 T8101 macOS 12.3 (21E230)
 - Xcode Version 13.3 (13E113)
 - Security Research Tools https://github.com/apple/security-research-device
-- brew install gnu-sed automake
+- brew install gnu-sed automake hg
 
 # SRD Source Build example-cryptex with toybox unstripped using this Repo
 - Step 1: Download this Repo that Builds with xnu-7195.141.2
