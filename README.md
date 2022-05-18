@@ -1,8 +1,10 @@
 # Welcome to Hoyt's SRD Repo
 TUE 17 MAY 2022 at 2100 EDT
-1. The recent Build Issues with ./example-cryptex/ for arm64e are now Resolved witht he Release of macOS 12.4 (21F79).
+-----
+1. The recent Build Issues with ./example-cryptex/ for arm64e are now Resolved with the Release of macOS 12.4 (21F79).
 2. The Notes below are for those who haven't yet upgraded to macOS 12.4 (21F79) on arm64e
 3. IF you experience Build Problems with Dropbear on arm64e, when using macOS 12.3 or lesser versions, such a conftest Crashing, the Notes below are for you.
+4. Just use the example cryptex DMG :-]
 
 THU 12 MAY 2022 at 0600 US EDT
 ---
@@ -56,8 +58,8 @@ SUMMARY
 ### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
-| macOS 12.3 (21E230) X86_64       | PASS          | PASS          | PASS          | PASS          
-| macOS 12.3 (21E230) T8101  | PASS          | PASS          | PASS          | PASS 
+| macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
+| macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
 | X86_64 Install to iPhone 11 19E258    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
 | T8101 Install to iPhone 12 19E258    | PASS          | PASS          | PASS          | PASS 
 
