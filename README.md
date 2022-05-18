@@ -30,8 +30,8 @@ SUMMARY
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 19E258    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
-| T8101 Install to iPhone 12 19E258    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 19F77    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
+| T8101 Install to iPhone 12 19F77    | PASS          | PASS          | PASS          | PASS 
 
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
