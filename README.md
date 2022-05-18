@@ -1,37 +1,6 @@
 # Welcome to Hoyt's SRD Repo
-TUE 17 MAY 2022 at 2100 EDT
+TUE 18 MAY 2022 at 0600 EDT
 -----
-1. The recent Build Issues with ./example-cryptex/ for arm64e are now Resolved with the Release of macOS 12.4 (21F79)
-2. The Notes below are for those who haven't yet upgraded to macOS 12.4 (21F79) on arm64e
-3. IF you experience Build Problems with Dropbear on arm64e, when using macOS 12.3 or lesser versions, such a conftest Crashing, read below
-4. Just use the example cryptex DMG :-]
-
-THU 12 MAY 2022 at 0600 US EDT
----
-1. Building the default Apple example-cryptex fails, on arm64e, because of dropbear build macros that won't grab headers to permit ssh login
-    - conftest crashes in arm64e are due to obsolete macros for dropbear and configure.ac
-    - https://raw.githubusercontent.com/xsscx/srd/main/crashes/conftest-2022-05-05-arm64e.ips
-2. DIFF
-```
-diff src/dropbear/dropbear-src/configure.ac ~/iphone11/src/dropbear/dropbear-src/configure.ac
-1a2
->  Modified by dhoyt for Apple Security Research Device
-382c383
-< AC_HEADER_TIME
----
-> AC_HEADER_STDC
-```
-
-3. Posted a quick workaround for dropbear and its configure.ac
-    - https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/src/dropbear/configure.ac
-4. Use the pre-built DMG's using arm64e
-    - https://github.com/xsscx/srd/tree/main/dmg
-5. Cryptex personalizations from X86_64 result with a Crash when using cryptexctl, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25. Use arm64e for cryptex personalizations and installations to SRD
-6. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. 
-7. Changes ongoing thru 31 MAY 2022
-
-X86_64 Bugs du Jour for cryptexctl
-------------
 - macOS 12.4 (21F79) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
     - [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
 - cryptexctl X86_64 Error: manifest constraint violated: BORD: 13
@@ -49,7 +18,7 @@ X86_64
     
 SUMMARY
 ----
-- This Repo is __ahead__ of the Apple Repo b
+- This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
 - This Repo aka PR42 https://github.com/apple/security-research-device/pull/42
