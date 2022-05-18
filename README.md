@@ -1,9 +1,9 @@
 # Welcome to Hoyt's SRD Repo
 TUE 17 MAY 2022 at 2100 EDT
 -----
-1. The recent Build Issues with ./example-cryptex/ for arm64e are now Resolved with the Release of macOS 12.4 (21F79).
+1. The recent Build Issues with ./example-cryptex/ for arm64e are now Resolved with the Release of macOS 12.4 (21F79)
 2. The Notes below are for those who haven't yet upgraded to macOS 12.4 (21F79) on arm64e
-3. IF you experience Build Problems with Dropbear on arm64e, when using macOS 12.3 or lesser versions, such a conftest Crashing, the Notes below are for you.
+3. IF you experience Build Problems with Dropbear on arm64e, when using macOS 12.3 or lesser versions, such a conftest Crashing, read below
 4. Just use the example cryptex DMG :-]
 
 THU 12 MAY 2022 at 0600 US EDT
@@ -32,7 +32,7 @@ diff src/dropbear/dropbear-src/configure.ac ~/iphone11/src/dropbear/dropbear-src
 
 X86_64 Bugs du Jour for cryptexctl
 ------------
-- macOS 12.3.1 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
+- macOS 12.4 (21F79) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
     - [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
 - cryptexctl X86_64 Error: manifest constraint violated: BORD: 13
     - com.apple.cryptex ==  firmware execution failed: 13: Permission denied 
@@ -49,7 +49,8 @@ X86_64
     
 SUMMARY
 ----
-- This Repo is __ahead__ of the Apple Repo 
+- This Repo is __ahead__ of the Apple Repo b
+- Built on 21F79 with X86_64 and arm64e
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
 - This Repo aka PR42 https://github.com/apple/security-research-device/pull/42
 - If you see unsuitable CT policy .. for this platform/device, rejecting signature
@@ -70,8 +71,8 @@ SUMMARY
 
 ### Lastest IPSW + Cryptex Installations 
 ```
-Signed File: iPhone11,8,iPhone12,1_15.4.1_19E258_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
-Signed File: iPhone13,2,iPhone13,3_15.4.1_19E258_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
+Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
+Signed File: iPhone13,2,iPhone13,3_15.15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
 Signed File: iPhone11,8,iPhone12,1_15.5_19F5070b_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 Signed File: iPhone13,2,iPhone13,3_15.5_19F5070b_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
