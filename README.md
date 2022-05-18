@@ -1,4 +1,9 @@
 # Welcome to Hoyt's SRD Repo
+TUE 17 MAY 2022 at 2100 EDT
+1. The recent Build Issues with ./example-cryptex/ for arm64e are now Resolved witht he Release of macOS 12.4 (21F79).
+2. The Notes below are for those who haven't yet upgraded to macOS 12.4 (21F79) on arm64e
+3. IF you experience Build Problems with Dropbear on arm64e, when using macOS 12.3 or lesser versions, such a conftest Crashing, the Notes below are for you.
+
 THU 12 MAY 2022 at 0600 US EDT
 ---
 1. Building the default Apple example-cryptex fails, on arm64e, because of dropbear build macros that won't grab headers to permit ssh login
@@ -21,7 +26,7 @@ diff src/dropbear/dropbear-src/configure.ac ~/iphone11/src/dropbear/dropbear-src
     - https://github.com/xsscx/srd/tree/main/dmg
 5. Cryptex personalizations from X86_64 result with a Crash when using cryptexctl, see Issues https://github.com/xsscx/srd/issues/26 & https://github.com/xsscx/srd/issues/25. Use arm64e for cryptex personalizations and installations to SRD
 6. This Repo will become Code Only with basic readme.rtfm and all Write-ups, Comments moved to https://srd.cx to lower the Noise for Cloning. 
-7. Changes ongoing thru 15 MAY 2022
+7. Changes ongoing thru 31 MAY 2022
 
 X86_64 Bugs du Jour for cryptexctl
 ------------
