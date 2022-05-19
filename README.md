@@ -2,7 +2,6 @@
 TUE 18 MAY 2022 at 0600 EDT
 -----
 - macOS 12.4 (21F79) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
-    - [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
 - cryptexctl X86_64 Error: manifest constraint violated: BORD: 13
     - com.apple.cryptex ==  firmware execution failed: 13: Permission denied 
     - MobileStorageMounter Failed to install cryptex (<private>): 13 (Permission denied)
