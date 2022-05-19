@@ -24,9 +24,9 @@ SUMMARY
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 19F77    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
+| X86_64 Install to iPhone 11 19F77    | PASS         | PASS         | PASS          | PASS
 | T8101 Install to iPhone 12 19F77    | PASS          | PASS          | PASS          | PASS 
-
+* X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
 - macOS 12.4 (21F79) X86_64 or M1 T8101 macOS 12.4 (21F79)
