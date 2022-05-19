@@ -18,9 +18,6 @@ SUMMARY
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
-- This Repo aka PR42 https://github.com/apple/security-research-device/pull/42
-- If you see unsuitable CT policy .. for this platform/device, rejecting signature
-    - MUST personalize & install from arm64e platform only, X86_64 results with AMFI complaints
 
 ### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
