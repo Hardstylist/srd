@@ -29,8 +29,9 @@ SUMMARY
 
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
-- macOS 12.2.1 (21D62) X86_64 or M1 T8101 macOS 12.3 (21E230)
-- Xcode Version 13.3 (13E113)
+- macOS 12.4 (21F79) X86_64 or M1 T8101 macOS 12.4 (21F79)
+- cryptexctl or CryptexManager on arm64e, CryptexManager on X86_64
+- Xcode Version 13.4 (13F17a)
 
 ### Lastest IPSW + Cryptex Installations 
 ```
