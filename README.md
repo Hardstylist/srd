@@ -1,7 +1,5 @@
 # Welcome to Hoyt's SRD Repo
 TUE 18 MAY 2022 at 0600 EDT
------
-- macOS 12.4 (21F79) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
 
 ## SRD DMG Install
 M1 T8101
