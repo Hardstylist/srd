@@ -1,4 +1,5 @@
 # SRD Example Cryptex Build & DMG Installation
+
 M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
@@ -6,22 +7,27 @@ M1 T8101
 X86_64 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
-``` 
-- macOS 12.3 (21E230) X86_64 Note: cryptexctl == EXC_BAD_ACCESS (SIGSEGV)
-- [CryptexManager](https://github.com/pinauten/CryptexManager) on X86_64 has AMFI complaints and isn't reliable
+```
+    
+SUMMARY
+----
+- This Repo is __ahead__ of the Apple Repo
+- Built on 21F79 with X86_64 and arm64e
+- The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
 
 ### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 19F77    | SIGSEGV         | SIGSEGV         | SIGSEGV          | SIGSEGV
+| X86_64 Install to iPhone 11 19F77    | PASS         | PASS         | PASS          | PASS
 | T8101 Install to iPhone 12 19F77    | PASS          | PASS          | PASS          | PASS 
-
+* X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
-- macOS 12.2.1 (21D62) X86_64 or M1 T8101 macOS 12.3 (21E230)
-- Xcode Version 13.3 (13E113)
+- macOS 12.4 (21F79) X86_64 or M1 T8101 macOS 12.4 (21F79)
+- cryptexctl or CryptexManager on arm64e, CryptexManager on X86_64
+- Xcode Version 13.4 (13F17a)
 
 ### Lastest IPSW + Cryptex Installations 
 ```
@@ -29,7 +35,7 @@ Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.
 Signed File: iPhone13,2,iPhone13,3_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
 Signed File: iPhone11,8,iPhone12,1_15.5_19F5070b_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 Signed File: iPhone13,2,iPhone13,3_15.5_19F5070b_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-```
+````
 
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
