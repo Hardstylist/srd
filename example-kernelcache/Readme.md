@@ -1,10 +1,10 @@
-# How to Patch and Boot a KernelCache on an SRD
+# How to Patch and Boot a KernelCache on an SRD by Hoyt
 
-Updated: SAT 26 MAR 2022 
+Updated: FRI 20 MAY 2022 at 0645 EDT
 
 ```
 uname -a
-Darwin iPhone 21.4.0 CopyPasta Kernel Cache21.4.0: Mon Feb 21 21:27:55 PST 2022; root:xnu-8020.102.3~1/RELEASE_ARM64_T8101 iPhone13,2 Toybox
+Darwin iPhone 21.4.0 CopyPasta Kernel Cache 21.4.0: Mon Feb 21 21:27:55 PST 2022; root:xnu-8020.102.3~1/RELEASE_ARM64_T8101 iPhone13,2 Toybox
 Sat Mar 26 17:59:16 PDT 2022
 ```
 
@@ -36,7 +36,11 @@ Step 5:
 uname -a
 CopyPasta Kernel Cache
 ```
+
+Below is verbatim from SRD Tools from Apple
 -----
+# Patching and booting a KernelCache
+
 The Security Research Device allows flashing a custom kernelcache
 using the personalisation system and `srdutil(1)`.
 
