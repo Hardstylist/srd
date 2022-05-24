@@ -206,6 +206,7 @@ com.example.cryptex
   device = /dev/disk2s1
   mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.yobZuo
   ```
+### Other Resources for Crashes, PAC Fail, Regexp & Analysis
 
 When using a regexp to find Console Log Messages, these Files may be helpful:
 - https://github.com/xsscx/srd/blob/main/code/xnu-os-cli-regexp-small-applesecurityresearchdevice-runtarget-001.txt
@@ -214,3 +215,4 @@ When using a regexp to find Console Log Messages, these Files may be helpful:
 If you experience a Crash when using cryptexctl or com.apple.cryptex*, these URL's may be helpful:
 - https://srd.cx/possible-pointer-authentication-failure-data-abort/
 - https://srd.cx/debugserver-installation-configuration/
+- https://srd.cx/xnu-crash-analysis/
