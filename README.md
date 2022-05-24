@@ -148,10 +148,3 @@ xcrun -sdk iphoneos clang -g -O2  -mios-version-min=14.3 -DDEBUG=0  -Wall -Wpeda
 * Collaborative Research
 * All Code and Questions are Welcome 
 * When you see Code Errors, Fails or LOL's.. Please Open an Issue... Thanks!
-
-Read about Pointer Authentication Failure at URL https://srd.cx/possible-pointer-authentication-failure-data-abort/
-
-Read about debugserver for SRD at URL https://srd.cx/debugserver-installation-configuration/
-
-Follow this Repo and read URL https://srd.cx/srd-cryptex-installation/
-
