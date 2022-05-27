@@ -4,7 +4,7 @@ This page details how to Build & Install the ./example-cryptex/
 
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
-- brew install gnu-sed automake hg
+- brew install gnu-sed automake hg git-lfs
 
 # SRD Source Build example-cryptex with toybox unstripped using this Repo
 - Step 1: Download this Repo that Builds with xnu-7195.141.2
