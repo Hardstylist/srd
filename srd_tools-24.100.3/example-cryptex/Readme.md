@@ -74,10 +74,12 @@ That will Result with Questions containing keywords:
 ```
 can't build IOKitKeysPrivate.h
 ```
-A potential Workaround is to:
+The Issue is part of how GateKeep handles Downloads, and other CoreTrust | AMFI features, a part of the "make clean" issue. A potential Workaround is to:
 
 Step 1: 
 ```
+cd ./example-cryptex/
+sudo xattr -c * sdk-graft src/* src/*/*
 rm -rf sdk-graft com.example.cryptex.cxbd.signed com.example.cryptex.cxbd *.dmg *.dmg.backup com.example.cryptex.cxbd.signed com.example.cryptex.dstroot com.example.cryptex.cptx
 ```
 Step 2:
