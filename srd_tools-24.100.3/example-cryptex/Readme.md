@@ -2,9 +2,10 @@
 
 This page details how to Build & Install the ./example-cryptex/
 - Building an up to date cryptex is easy
-- Install the SRD DMG until you get a successful Build
-- IF you can't Install _my Example DMG_ then Open an Issue
-- IF you can't Build after Cloning _my cryptex_ then Open an Issue
+  - Download my fully working ./example-cryptex/ with binaries and DMG
+  - wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
+  - make install 
+- IF you can't Install after Downloading _my cryptex_ then Open an Issue
 
 ## SRD DMG Install
 M1 T8101
