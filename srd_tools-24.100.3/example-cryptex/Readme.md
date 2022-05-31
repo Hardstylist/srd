@@ -23,13 +23,8 @@ X86_64
 - Security Research Tools https://github.com/apple/security-research-device
 - cd ./example-cryptex/ 
 - brew install gnu-sed automake hg git-lfs
-- Download or Clone this Repo that Builds with XNU-8019.41.5 automagically
-- Manually wget and install the XNU as shown:
-  - cd ./example-cryptex/
-  - wget https://xss.cx/srd/sdk-graft/xnu-8019.41.5/srd-xnu-8019.41.5.tar.zip
-  - manually unzip to sdk-graft/
+- wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
 - make install
-- Works 100% on X86_64 & arm64e
 
 Automagic Build Pipeline
 ----------
