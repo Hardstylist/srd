@@ -8,7 +8,8 @@ Build & Install the ./example-cryptex/ in this Repo
 - IF you can't Install _my Example DMG_ then Open an Issue
 - Want to Build a Cryptex
     - Read URL: https://github.com/xsscx/srd/tree/main/srd_tools-24.100.3/example-cryptex 
-- IF you can't Build after Cloning and Installing XNU for _my cryptex_ then Open an Issue    
+- Use my ./example-cryptex/ at URL https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
+    - Fully working ./example-cryptex/ with binaries built with XNU-8019.41.5      
 
 ## SRD DMG Install
 M1 T8101
