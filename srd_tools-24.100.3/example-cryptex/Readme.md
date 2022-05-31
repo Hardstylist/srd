@@ -1,8 +1,10 @@
 # SRD Example Cryptex & DMG Source Build Repo for SRT 24.100.3
 
 This page details how to Build & Install the ./example-cryptex/
-- Build is a Double Diamond Ski Trail
-- Install the SRD DMG instead
+- Building an up to date cryptex is easy
+- Install the SRD DMG until you get a successful Build
+- IF you can't install _my Example DMG_ then Open an Issue
+- IF you can't Build after Cloning _my cryptex_ then Open an Issue
 
 ## SRD DMG Install
 M1 T8101
@@ -14,21 +16,23 @@ X86_64
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
 ```
 
-## Prerequisites
-- Security Research Tools https://github.com/apple/security-research-device
-- brew install gnu-sed automake hg git-lfs
+## SRD Source Build example-cryptex with toybox unstripped using this Repo
 
-# SRD Source Build example-cryptex with toybox unstripped using this Repo
-- Step 1: Download this Repo that Builds with XNU-8019.41.5 after manual installation of said XNU.
+### Prerequisites
+
+- Security Research Tools https://github.com/apple/security-research-device
+- cd ./example-cryptex/ 
+- brew install gnu-sed automake hg git-lfs
+- Download this Repo that Builds with XNU-8019.41.5 after manual installation of said XNU.
 - Read https://github.com/xsscx/srd/blob/main/srd_tools-24.100.3/example-cryptex/build_env_test-xnu-8019.41.5.mk
 - wget https://xss.cx/srd/sdk-graft/xnu-8019.41.5/srd-xnu-8019.41.5.tar.zip
-  - cd ./example-cryptex/ 
-- Step 2 - M1: Run build.sh as shown below on M1 T8101
+
+- M1: Run build.sh as shown below on M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh)" 
 ```
 
-- Step 2 - X86_64: Run cryptexmanager-build.sh as shown below on X86_64
+- X86_64: Run cryptexmanager-build.sh as shown below on X86_64
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-build.sh)" 
 ```
