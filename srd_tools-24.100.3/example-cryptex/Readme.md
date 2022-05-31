@@ -23,6 +23,10 @@ X86_64
 - cd ./example-cryptex/ 
 - brew install gnu-sed automake hg git-lfs
 - Download or Close this Repo that Builds with XNU-8019.41.5 automagically
+- Manually wget and install the XNU as shown:
+  - cd ./example-cryptex/
+  - wget https://xss.cx/srd/sdk-graft/xnu-8019.41.5/srd-xnu-8019.41.5.tar.zip
+  - manually unzip to sdk-graft
 - M1: Run build.sh as shown below on M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh)" 
@@ -38,6 +42,13 @@ This Issue of: "can't build IOKitKeysPrivate.h" continues to cause Build Pipelin
 ### Background | make clean | can't build IOKitKeysPrivate.h
 The Build Pipeline will Download multiple Source Packages, that may not always be handled by GateKeeper, CoreTrust or AMFI as expected. And, with Security Research Tools (SRT) 20C80, the file name extension is .cxbd. Running make clean would do the right thing. With later Releases of SRT, as shown in the Makefile, the file extension is .cxbd.signed. The Issue is Summarized in PR42 at URL https://github.com/apple/security-research-device/pull/42
 
+Are you seeing this Error Message when using the default ./example-cryptex/? It means your XNU didn't Download, or Clean correctly. Try again.
+```
+*** No rule to make target `.... IOKitKeysPrivate.h'
+```
+
+Other Notes
+-----
 The action of:
 ```
 make clean
