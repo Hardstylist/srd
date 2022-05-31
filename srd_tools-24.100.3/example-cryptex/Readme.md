@@ -78,7 +78,7 @@ A potential Workaround is to:
 
 Step 1: 
 ```
-rm -rf com.example.cryptex.cxbd.signed com.example.cryptex.cxbd srd-universal-cryptex.dmg com.example.cryptex.dmg srd-universal-cryptex.dmg.backup com.example.cryptex.cxbd.signed com.example.cryptex.dstroot com.example.cryptex.cptx
+rm -rf sdk-graft com.example.cryptex.cxbd.signed com.example.cryptex.cxbd *.dmg *.dmg.backup com.example.cryptex.cxbd.signed com.example.cryptex.dstroot com.example.cryptex.cptx
 ```
 Step 2:
 Modify Makefile and Remove:
