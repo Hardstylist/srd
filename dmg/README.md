@@ -415,16 +415,13 @@ com.example.cryptex.dstroot
     │   ├── [ -> toybox
     │   ├── a.out
     │   ├── ascii -> toybox
-    │   ├── aslr
     │   ├── base64 -> toybox
     │   ├── basename -> toybox
     │   ├── bash -> toybox
-    │   ├── binbag
     │   ├── c1.exr
     │   ├── c2.exr
     │   ├── cal -> toybox
     │   ├── cat -> toybox
-    │   ├── catv -> toybox
     │   ├── chain3
     │   ├── chgrp -> toybox
     │   ├── chmod -> toybox
@@ -441,6 +438,7 @@ com.example.cryptex.dstroot
     │   ├── cryptex-run
     │   ├── cut -> toybox
     │   ├── date -> toybox
+    │   ├── dd
     │   ├── debugserver
     │   ├── df -> toybox
     │   ├── dirname -> toybox
@@ -468,29 +466,25 @@ com.example.cryptex.dstroot
     │   ├── groups -> toybox
     │   ├── head -> toybox
     │   ├── hello
-    │   ├── hello-code-cov
-    │   ├── hello_world
-    │   ├── hellosan
     │   ├── help -> toybox
     │   ├── hexedit -> toybox
     │   ├── hostname -> toybox
     │   ├── iconv -> toybox
     │   ├── id -> toybox
     │   ├── image.jpeg
+    │   ├── install -> toybox
     │   ├── ioclass
     │   ├── ioprint
     │   ├── ioreg
-    │   ├── ios-13_voucher_leak
     │   ├── ios-14-voucher_leak
-    │   ├── ios-command-line-tool
     │   ├── ioscan
     │   ├── kill -> toybox
     │   ├── killall5 -> toybox
     │   ├── leak64
     │   ├── libarchive.a
+    │   ├── libclang_rt.asan_ios_dynamic.dylib
     │   ├── libmemctl_core.a
     │   ├── link -> toybox
-    │   ├── lister
     │   ├── ln -> toybox
     │   ├── logger -> toybox
     │   ├── logname -> toybox
@@ -509,8 +503,9 @@ com.example.cryptex.dstroot
     │   ├── nohup -> toybox
     │   ├── nvram
     │   ├── od -> toybox
-    │   ├── optool
     │   ├── orig.tif
+    │   ├── p0-1974-arm64e
+    │   ├── p0-1974-arm64e-asan
     │   ├── paste -> toybox
     │   ├── patch -> toybox
     │   ├── prinfkernversion
@@ -597,7 +592,6 @@ com.example.cryptex.dstroot
     │   ├── s3_6_c15_c1_6-read
     │   ├── s3_6_c15_c1_7-flip
     │   ├── s3_6_c15_c1_7-read
-    │   ├── s3_6_c15_c2_5-read
     │   ├── s3_6_c15_c3_0-flip
     │   ├── s3_6_c15_c3_0-read
     │   ├── s3_6_c15_c3_1-flip
@@ -613,6 +607,11 @@ com.example.cryptex.dstroot
     │   ├── setsid -> toybox
     │   ├── sh -> toybox
     │   ├── sha1sum -> toybox
+    │   ├── sha224sum -> toybox
+    │   ├── sha256sum -> toybox
+    │   ├── sha384sum -> toybox
+    │   ├── sha3sum -> toybox
+    │   ├── sha512sum -> toybox
     │   ├── simple-server
     │   ├── simple-shell
     │   ├── sleep -> toybox
@@ -630,13 +629,6 @@ com.example.cryptex.dstroot
     │   ├── template-flip
     │   ├── template-read
     │   ├── test -> toybox
-    │   ├── test1
-    │   ├── test2
-    │   ├── test3
-    │   ├── test4
-    │   ├── test6
-    │   ├── test7
-    │   ├── test8
     │   ├── time -> toybox
     │   ├── timeout -> toybox
     │   ├── touch -> toybox
@@ -654,7 +646,6 @@ com.example.cryptex.dstroot
     │   ├── uuencode -> toybox
     │   ├── uuidgen -> toybox
     │   ├── vi -> toybox
-    │   ├── vs_cli
     │   ├── w -> toybox
     │   ├── watch -> toybox
     │   ├── wc -> toybox
@@ -665,10 +656,11 @@ com.example.cryptex.dstroot
     │   ├── whoami -> toybox
     │   ├── xargs -> toybox
     │   ├── xxd -> toybox
-    │   └── yes -> toybox
+    │   ├── yes -> toybox
+    │   └── zcat -> toybox
     └── lib
         └── frida
             └── frida-agent.dylib
 
-6 directories, 262 files
+6 directories, 254 files
 ```
