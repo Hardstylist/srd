@@ -34,7 +34,7 @@ X86_64
 ```
 
 ## As of May 31, 2022
-This Issue of: "can't build IOKitKeysPrivate.h"continues to cause Build Pipeline Issues for SRDC, see URL https://github.com/apple/security-research-device/issues/59
+This Issue of: "can't build IOKitKeysPrivate.h" continues to cause Build Pipeline Issues for SRDC, see URL https://github.com/apple/security-research-device/issues/59
 
 ### Background | make clean | can't build IOKitKeysPrivate.h
 With Security Research Tools (SRT) 20C80, the file name extension is .cxbd.
