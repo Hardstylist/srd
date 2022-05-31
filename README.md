@@ -1,5 +1,14 @@
 # Welcome to Hoyt's SRD Repo
-TUE 31 MAY 2022 at 0644 EDT
+TUE 31 MAY 2022 at 1101 EDT
+
+Build & Install the ./example-cryptex/ in this Repo
+-----
+- Building an up to date cryptex is easy with this Repo
+- Install the SRD DMG until you get a successful Build
+- IF you can't Install _my Example DMG_ then Open an Issue
+- Want to Build a Cryptex
+    - Read URL: https://github.com/xsscx/srd/tree/main/srd_tools-24.100.3/example-cryptex 
+- IF you can't Build after Cloning and Installing XNU for _my cryptex_ then Open an Issue    
 
 ## SRD DMG Install
 M1 T8101
