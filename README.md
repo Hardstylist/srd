@@ -9,6 +9,7 @@ Build & Install the ./example-cryptex/ in this Repo
 - Use my ./example-cryptex/ at URL https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
     - Fully working ./example-cryptex/ with binaries built with XNU-8019.41.5      
 - Reproduction in a GIF https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.gif
+- Reproduction in a MOV https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.mov
 
 ## SRD DMG Install
 M1 T8101
