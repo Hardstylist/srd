@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-SUN 22 MAY 2022 at 1935 EDT
+TUE 31 MAY 2022 at 0644 EDT
 
 ## SRD DMG Install
 M1 T8101
