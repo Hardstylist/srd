@@ -3,14 +3,16 @@
 Build & Install the ./example-cryptex/ in this Repo
 -----
 - Building an up to date cryptex is easy with this Repo
-- Want to Build a Cryptex
-    - Fully working ./example-cryptex/ with binaries built with XNU-8019.41.5      
+- Fully working ./example-cryptex/ with binaries built with XNU-8019.41.5      
 - Reproduction in a GIF https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.gif
+
+
+## START HERE
 
 Get the Working Cryptex via Zip
 ------
 - wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
-- unzip example-cryptex/hoyt-working-example-cryptex.zip
+- unzip hoyt-working-example-cryptex.zip
 - cd public-domain
 - make install 
 ```
