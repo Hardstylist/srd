@@ -13,6 +13,13 @@ This page details how to Build & Install the ./example-cryptex/
 created: /Users/xss/validate/public-domain/com.example.cryptex.dmg
 [public-domain] - Creating cryptex /Users/xss/validate/public-domain/com.example.cryptex.cxbd - 1.3.3.7 from the disk image com.example.cryptex.dmg
 ```
+Confirmation
+```
+# uname -a
+Darwin SRD0009 21.6.0 Darwin Kernel Version 21.6.0: Mon May  9 00:43:43 PDT 2022; root:xnu-8020.140.20.0.4~16/RELEASE_ARM64_T8030 iPhone12,1 Toybox
+# date
+Tue May 31 18:10:33 EDT 2022
+```
 - IF you can't Install after Downloading _my cryptex_ then Open an Issue
 
 ## SRD DMG Install
