@@ -4,6 +4,8 @@ This page details how to Build & Install the ./example-cryptex/
 - Building an up to date cryptex is easy
   - Download my fully working ./example-cryptex/ with binaries and DMG
   - wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
+  - unzip example-cryptex/hoyt-working-example-cryptex.zip
+  - cd public-domain
   - make install 
 - IF you can't Install after Downloading _my cryptex_ then Open an Issue
 
