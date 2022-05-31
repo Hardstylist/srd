@@ -26,7 +26,7 @@ X86_64
 - Manually wget and install the XNU as shown:
   - cd ./example-cryptex/
   - wget https://xss.cx/srd/sdk-graft/xnu-8019.41.5/srd-xnu-8019.41.5.tar.zip
-  - manually unzip to sdk-graft
+  - manually unzip to sdk-graft/
 - M1: Run build.sh as shown below on M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh)" 
@@ -35,63 +35,6 @@ X86_64
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-build.sh)" 
 ```
-
-## As of May 31, 2022
-This Issue of: "can't build IOKitKeysPrivate.h" continues to cause Build Pipeline Issues for SRDC, see URL https://github.com/apple/security-research-device/issues/59
-
-### Background | make clean | can't build IOKitKeysPrivate.h
-The Build Pipeline will Download multiple Source Packages, that may not always be handled by GateKeeper, CoreTrust or AMFI as expected. And, with Security Research Tools (SRT) 20C80, the file name extension is .cxbd. Running make clean would do the right thing. With later Releases of SRT, as shown in the Makefile, the file extension is .cxbd.signed. The Issue is Summarized in PR42 at URL https://github.com/apple/security-research-device/pull/42
-
-Are you seeing this Error Message when using the default ./example-cryptex/? It means your XNU didn't Download, or Clean correctly. Try again.
-```
-*** No rule to make target `.... IOKitKeysPrivate.h'
-```
-
-Other Notes
------
-The action of:
-```
-make clean
-```
-when using the Makefile from the ./example-cryptex/ at URL https://github.com/apple/security-research-device/blob/main/example-cryptex/Makefile contains:
-```
-rm -rf ${CRYPTEX_ROOT_DIR} ${CRYPTEX_DMG_NAME} ${CRYPTEX_ID}.cptx
-```
-yet the correct action is to:
-```
-rm -rf ${CRYPTEX_ROOT_DIR} ${CRYPTEX_DMG_NAME} ${CRYPTEX_ID}.cxbd.signed
-```
-That incorrect cleansing Issue may be seen as:
-```
-make clean
-...
-rm: /Users/xss/iphone11/com.example.cryptex.dstroot/usr: Permission denied
-rm: /Users/xss/iphone11/com.example.cryptex.dstroot: Permission denied
-rm: /Users/xss/iphone11/sdk-graft/: Permission denied
-make: *** [clean] Error 1
-```
-That will Result with Questions containing keywords:
-```
-can't build IOKitKeysPrivate.h
-```
-The Issue is part of how GateKeep handles Downloads, and other CoreTrust | AMFI features, a part of the "make clean" issue. A potential Workaround is to:
-
-Step 1: 
-```
-cd ./example-cryptex/
-sudo xattr -c * sdk-graft src/* src/*/*
-rm -rf sdk-graft com.example.cryptex.cxbd.signed com.example.cryptex.cxbd *.dmg *.dmg.backup com.example.cryptex.cxbd.signed com.example.cryptex.dstroot com.example.cryptex.cptx
-```
-Step 2:
-Modify Makefile and Remove:
-```
-rm -rf ${CRYPTEX_ROOT_DIR} ${CRYPTEX_DMG_NAME} ${CRYPTEX_ID}.cxbd
-```
-Adding:
-```
-rm -rf ${CRYPTEX_ROOT_DIR} ${CRYPTEX_DMG_NAME} ${CRYPTEX_ID}.cxbd ${CRYPTEX_ID}.cxbd.signed
-```
-
 ## Security Research Tools (SRT) 24.100.3 Canned Instructions 
 
 0. Install the prerequisites and select your Xcode with `xcode-select(1)`.
