@@ -27,6 +27,10 @@ X86_64
   - cd ./example-cryptex/
   - wget https://xss.cx/srd/sdk-graft/xnu-8019.41.5/srd-xnu-8019.41.5.tar.zip
   - manually unzip to sdk-graft/
+- make install
+
+Automagic Build Pipeline
+----------
 - M1: Run build.sh as shown below on M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh)" 
