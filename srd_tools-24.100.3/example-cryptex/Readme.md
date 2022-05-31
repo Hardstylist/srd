@@ -7,6 +7,12 @@ This page details how to Build & Install the ./example-cryptex/
   - unzip example-cryptex/hoyt-working-example-cryptex.zip
   - cd public-domain
   - make install 
+```
+[public-domain] - Creating disk image com.example.cryptex.dmg from distribution root /Users/xss/validate/public-domain/com.example.cryptex.dstroot
+....................................................................................................................................................................................................................................................................................
+created: /Users/xss/validate/public-domain/com.example.cryptex.dmg
+[public-domain] - Creating cryptex /Users/xss/validate/public-domain/com.example.cryptex.cxbd - 1.3.3.7 from the disk image com.example.cryptex.dmg
+```
 - IF you can't Install after Downloading _my cryptex_ then Open an Issue
 
 ## SRD DMG Install
