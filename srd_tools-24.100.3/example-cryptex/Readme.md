@@ -3,7 +3,7 @@
 This page details how to Build & Install the ./example-cryptex/
 - Building an up to date cryptex is easy
 - Install the SRD DMG until you get a successful Build
-- IF you can't install _my Example DMG_ then Open an Issue
+- IF you can't Install _my Example DMG_ then Open an Issue
 - IF you can't Build after Cloning _my cryptex_ then Open an Issue
 
 ## SRD DMG Install
@@ -19,19 +19,14 @@ X86_64
 ## SRD Source Build example-cryptex with toybox unstripped using this Repo
 
 ### Prerequisites
-
 - Security Research Tools https://github.com/apple/security-research-device
 - cd ./example-cryptex/ 
 - brew install gnu-sed automake hg git-lfs
-- Download this Repo that Builds with XNU-8019.41.5 after manual installation of said XNU.
-- Read https://github.com/xsscx/srd/blob/main/srd_tools-24.100.3/example-cryptex/build_env_test-xnu-8019.41.5.mk
-- wget https://xss.cx/srd/sdk-graft/xnu-8019.41.5/srd-xnu-8019.41.5.tar.zip
-
+- Download or Close this Repo that Builds with XNU-8019.41.5 automagically
 - M1: Run build.sh as shown below on M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/build.sh)" 
 ```
-
 - X86_64: Run cryptexmanager-build.sh as shown below on X86_64
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-build.sh)" 
@@ -41,13 +36,7 @@ X86_64
 This Issue of: "can't build IOKitKeysPrivate.h" continues to cause Build Pipeline Issues for SRDC, see URL https://github.com/apple/security-research-device/issues/59
 
 ### Background | make clean | can't build IOKitKeysPrivate.h
-With Security Research Tools (SRT) 20C80, the file name extension is .cxbd.
-
-Running make clean would do the right thing.
-
-With later Releases of SRT, as shown in the Makefile, the file extension is .cxbd.signed
-
-The Issue is Summarized in PR42 at URL https://github.com/apple/security-research-device/pull/42
+The Build Pipeline will Download multiple Source Packages, that may not always be handled by GateKeeper, CoreTrust or AMFI as expected. And, with Security Research Tools (SRT) 20C80, the file name extension is .cxbd. Running make clean would do the right thing. With later Releases of SRT, as shown in the Makefile, the file extension is .cxbd.signed. The Issue is Summarized in PR42 at URL https://github.com/apple/security-research-device/pull/42
 
 The action of:
 ```
