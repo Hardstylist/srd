@@ -5,8 +5,7 @@ Build & Install the ./example-cryptex/ in this Repo
 - Building an up to date cryptex is easy with this Repo
 - Fully working ./example-cryptex/ with binaries built with XNU-8019.41.5      
 - Reproduction in a GIF https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.gif
-
-
+- 
 ## START HERE
 
 Get the Working Cryptex via Zip
@@ -28,7 +27,7 @@ Darwin SRD0009 21.6.0 Darwin Kernel Version 21.6.0: Mon May  9 00:43:43 PDT 2022
 # date
 Tue May 31 18:10:33 EDT 2022
 ```
-- IF you can't Install after Downloading _my cryptex_ then Open an Issue
+- Open an Issue if you have _any_ questions!
 
 ## SRD DMG Install
 M1 T8101
