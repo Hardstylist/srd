@@ -67,7 +67,7 @@ make clean
 ...
 rm: /Users/xss/iphone11/com.example.cryptex.dstroot/usr: Permission denied
 rm: /Users/xss/iphone11/com.example.cryptex.dstroot: Permission denied
-rm: /Users/xss/iphone11/sdk-graft/
+rm: /Users/xss/iphone11/sdk-graft/: Permission denied
 make: *** [clean] Error 1
 ```
 That will Result with Questions containing keywords:
