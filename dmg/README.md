@@ -1,35 +1,42 @@
-# SRD Example Cryptex Build & DMG Installation
+# SRD Example DMG Installation
 
-M1 T8101
+## SUMMARY | WED 1 JUN 2022 at 1029 EDT
+- This Repo is __ahead__ of the Apple Repo
+- Built on 21F79 with X86_64 and arm64e
+- The SRD Example DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
+
+Install SRD example DMG from M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
-X86_64 
+Install SRD example DMG from X86_64 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
 ```
-    
-SUMMARY
+### How to Confirm the SRD Example DMG Install
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
+```
+Audit Trail
 ----
-- This Repo is __ahead__ of the Apple Repo
-- Built on 21F79 with X86_64 and arm64e
-- The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
+```
+--2022-01-17 14:12:26--  https://xss.cx/srd/dmg/srd-universal-cryptex.dmg
+Resolving xss.cx (xss.cx)... 50.62.160.45
+Connecting to xss.cx (xss.cx)|50.62.160.45|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 27295841 (26M) [application/x-zip-compressed]
+Saving to: ‘srd-universal-cryptex.dmg’
 
-### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
-| Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
-| -------------------------------- | ------------- | ------------- | ------------- | -------------
-| macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
-| macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 15.6_19G5037d    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 15.6_19G5027e    | PASS          | PASS          | PASS          | PASS 
-* X86_64 Install with CryptexManager
-## Last Known Good Working Configuration(s)
-- SIP Enabled
-- macOS 12.4 (21F79) X86_64 or M1 T8101 macOS 12.4 (21F79)
-- cryptexctl or CryptexManager on arm64e, CryptexManager on X86_64
-- Xcode Version 13.4 (13F17a)
+srd-universal-cryptex.dmg                                                                                100%[=================================================================================================================================================================================================================================================================================>]  26.03M  3.32MB/s    in 8.3s
 
-### Lastest IPSW + Cryptex Installations 
+2022-01-17 14:12:35 (3.12 MB/s) - ‘srd-universal-cryptex.dmg’ saved [27295841/27295841]
+
+com.example.cryptex
+  version = 1.3.3.7
+  device = /dev/disk2s1
+  mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.yobZuo
+  ```
+### Lastest IPSW + DMG Installations 
 ```
 Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
 Signed File: iPhone13,2,iPhone13,3_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
@@ -50,22 +57,6 @@ Signed File: iPhone13,2,iPhone13,3_15.6_19G5027e_Restore.ipsw | defaults write c
 - Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 15.6
 - Tested on macOS 11.6.x using SRT 20C80, macOS 12.x using 21F79 and Cryptex Manager from X86_64 and M1 T8101 Platforms 
 
-## How To Build SRD Universal Cryptex DMG with frida, toybox unstripped, debugserver and Install to SRD
-```
-cd example-cryptex
-make clean
-make all
-chmod 775 src/toybox/toybox-src/generated/unstripped/toybox
-sudo cp src/toybox/toybox-src/generated/unstripped/toybox com.example.cryptex.dstroot/usr/bin
-codesign --force -s -  com.example.cryptex.dstroot/usr/bin/toybox
-codesign --force -s - --entitlements src/toybox/entitlements.plist com.example.cryptex.dstroot/usr/bin/toybox
-hdiutil create -fs hfs+ -srcfolder com.example.cryptex.dstroot srd-universal-cryptex.dmg
-cryptexctl ${CRYPTEXCTL_FLAGS} create --research --replace ${CRYPTEXCTL_CREATE_FLAGS} --identifier=com.example.cryptex --version=1.3.3.7 --variant=research srd-universal-cryptex.dmg
-cryptexctl ${CRYPTEXCTL_PERSONALIZE_FLAGS} personalize --replace  --variant=research com.example.cryptex.cxbd
-cryptexctl uninstall com.example.cryptex
-cryptexctl install --variant=research --persist com.example.cryptex.cxbd.signed
-cryptexctl list
-```
 ## How to Install an example cryptex DMG to the SRD
 ```
 cd example-cryptex
@@ -83,31 +74,6 @@ com.example.cryptex
   version = 1.3.3.7
   device = /dev/disk3s1
   mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.nJlkxj
-```
-## How to Notarize a DMG
-```
-codesign --timestamp --force -s "DEVELOPER_ID" srd-universal-cryptex.dmg
-xcrun notarytool submit srd-universal-cryptex.dmg --credz
-xcrun stapler staple srd-universal-cryptex.dmg
-```
-## How to Validate Notarization of DMG
-```
-xcrun stapler validate  srd-universal-cryptex.dmg
-Processing: /Users/xss/security-research-device-main/example-cryptex/srd-universal-cryptex.dmg
-The validate action worked!
-codesign -vvvv -R="notarized"  srd-universal-cryptex.dmg
-srd-universal-cryptex.dmg: valid on disk
-srd-universal-cryptex.dmg: satisfies its Designated Requirement
-srd-universal-cryptex.dmg: explicit requirement satisfied
-```
-
-## Files to Build with XNU-8019.41.5
-- Makefile https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/Makefile
-- Settings https://github.com/xsscx/srd/blob/main/srd_tools-24.100.3/example-cryptex/build_env_test-xnu-8019.41.5.mk
-
-### XNU Export
-```
-export XNU_VERSION=xnu-8019.41.5
 ```
 
 ## frida-ps Example Listing
@@ -158,28 +124,6 @@ PID  Name                Identifier
 ```
 ### Frida History
 Frida built from Commit in https://github.com/apple/security-research-device/issues/13
-
-### How to Confirm the SRD Example DMG Install | Audit Trail
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
-```
-```
---2022-01-17 14:12:26--  https://xss.cx/srd/dmg/srd-universal-cryptex.dmg
-Resolving xss.cx (xss.cx)... 50.62.160.45
-Connecting to xss.cx (xss.cx)|50.62.160.45|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 27295841 (26M) [application/x-zip-compressed]
-Saving to: ‘srd-universal-cryptex.dmg’
-
-srd-universal-cryptex.dmg                                                                                100%[=================================================================================================================================================================================================================================================================================>]  26.03M  3.32MB/s    in 8.3s
-
-2022-01-17 14:12:35 (3.12 MB/s) - ‘srd-universal-cryptex.dmg’ saved [27295841/27295841]
-
-com.example.cryptex
-  version = 1.3.3.7
-  device = /dev/disk2s1
-  mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.yobZuo
-  ```
 
 ## SRD ASAN & UBSAN Installation Information | Drilling Down
 ###  iPhone 12 - TSS ASAN Cryptex Example HTTP Response of Success for Personalization
