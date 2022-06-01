@@ -24,6 +24,7 @@ Tue May 31 18:10:33 EDT 2022
 ```
 - Open an Issue if you have _any_ questions! OR
 - Reach out via DM on Twitter https://twitter.com/h02332
+- arm64e ./example-cryptex/ grab it https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex-plus-compiled-binaries-arm64e.zip
 
 ## SRD DMG Install
 M1 T8101
