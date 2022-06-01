@@ -1,16 +1,29 @@
 # Welcome to Hoyt's SRD Repo
-TUE 31 MAY 2022 at 1101 EDT
+WED 1 JUN 2022 at 0847 EDT
 
-Build & Install the ./example-cryptex/ in this Repo
------
-- Building an up to date cryptex is easy with this Repo
-- Use my Cryptex
-    - Read URL: https://github.com/xsscx/srd/tree/main/srd_tools-24.100.3/example-cryptex 
-- Use my ./example-cryptex/ at URL https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
-    - Fully working ./example-cryptex/ with binaries built with XNU-8019.41.5
-    - https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex-plus-compiled-binaries.zip      
-- Reproduction in a GIF https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.gif
-- Reproduction in a MOV https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.mov
+## START HERE
+
+Get the Working Cryptex
+------
+- wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
+- unzip hoyt-working-example-cryptex.zip
+- cd public-domain
+- make install 
+```
+[public-domain] - Creating disk image com.example.cryptex.dmg from distribution root /Users/xss/validate/public-domain/com.example.cryptex.dstroot
+....................................................................................................................................................................................................................................................................................
+created: /Users/xss/validate/public-domain/com.example.cryptex.dmg
+[public-domain] - Creating cryptex /Users/xss/validate/public-domain/com.example.cryptex.cxbd - 1.3.3.7 from the disk image com.example.cryptex.dmg
+```
+Confirmation
+```
+# uname -a
+Darwin SRD0009 21.6.0 Darwin Kernel Version 21.6.0: Mon May  9 00:43:43 PDT 2022; root:xnu-8020.140.20.0.4~16/RELEASE_ARM64_T8030 iPhone12,1 Toybox
+# date
+Tue May 31 18:10:33 EDT 2022
+```
+- Open an Issue if you have _any_ questions! OR
+- Reach out via DM on Twitter https://twitter.com/h02332
 
 ## SRD DMG Install
 M1 T8101
