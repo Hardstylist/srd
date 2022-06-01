@@ -41,12 +41,12 @@ SUMMARY
 - Built on 21F79 with X86_64 and arm64e
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
 
-### SRD Example DMG, Build & Installation Status w/ XNU-8019.41.5 
+### SRD Example DMG, Build & Installation Status w/ + XNU-8019.41.5 OR XNU 6153.81.5
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 15.6_19G5027e    | PASS         | PASS         | PASS          | PASS
+| X86_64 Install to iPhone 11 15.6_19G5037d    | PASS         | PASS         | PASS          | PASS
 | T8101 Install to iPhone 12 15.6_19G5027e    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
@@ -59,7 +59,7 @@ SUMMARY
 ```
 Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
 Signed File: iPhone13,2,iPhone13,3_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
-Signed File: iPhone11,8,iPhone12,1_15.6_19G5027e_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone11,8,iPhone12,1_15.6_19G5037d_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 Signed File: iPhone13,2,iPhone13,3_15.6_19G5027e_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
 
