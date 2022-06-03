@@ -6,16 +6,14 @@
 - The SRD Example DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
 
 Install SRD example DMG from M1 T8101
+----
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
 Install SRD example DMG from X86_64 
+----
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
-```
-### How to Confirm the SRD Example DMG Install
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
 Audit Trail
 ----
@@ -36,16 +34,10 @@ com.example.cryptex
   device = /dev/disk2s1
   mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.yobZuo
   ```
-### Lastest IPSW + DMG Installations 
-```
-Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
-Signed File: iPhone13,2,iPhone13,3_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
-Signed File: iPhone11,8,iPhone12,1_15.6_19G5027e_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-Signed File: iPhone13,2,iPhone13,3_15.6_19G5027e_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-```
-
+  
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
+- https://github.com/pinauten/CryptexManager/ is required for cryptex installation on X86_64
 
 ### Resources
 - DMG: https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
