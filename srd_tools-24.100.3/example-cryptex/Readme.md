@@ -9,9 +9,10 @@ Build & Install the ./example-cryptex/ in this Repo
 - Reproduction in a GIF https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.gif
 - Reproduction in a MOV https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.mov
 - Open an Issue if you have _any_ questions!
+- arm64e ./example-cryptex/ https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex-plus-compiled-binaries-arm64e.zip
 ## START HERE
 
-Get the Working Cryptex via Zip
+Get the Working Cryptex for X86_64
 ------
 - wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
 - unzip hoyt-working-example-cryptex.zip
