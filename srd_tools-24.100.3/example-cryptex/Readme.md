@@ -197,6 +197,11 @@ with the `--BNCH` flag on `cryptexctl create`, and can be retrieved from the dev
 with the `cryptexctl nonce` subcommand.
 
 ### Troubleshooting
+
+The SRD Build Pipeline is robust, but like all other 'live build' systems there can be transitory Network issues that prevent a successful Build & Installation.
+
+Take for example that over US Memorial Day Weekend Holiday in 2021 there were points in time where GateKeeper, CoreTrust. AMFI and the Tatsu Signing Server were unavailable. No cryptex build; Researcher needs to always have Backup DMG's for when the Build Pipeline fails.
+
 ### Enable verbose logging with -v, -d and redirect from the system log to stderr with -ldt
 ``` 
 cryptexctl -v4 -d4 -ldt install --variant=research --persist --print-info ./com.example.cryptex.cxbd.signed (srd_tools-24.100.3)
