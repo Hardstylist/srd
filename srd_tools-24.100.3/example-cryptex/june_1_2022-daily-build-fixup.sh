@@ -1,6 +1,13 @@
 #!/bin/sh
 rm -rf srd-universal-cryptex.dmg
-echo "June 1 2022 Daily Fixup for Building SRD UNIVERSAL DMG and Install Cryptex to SRD......."
+echo "June 1 2022 Daily Fixup for Building SRD UNIVERSAL DMG and Install Cryptex to SRD + fix toybox unstripped Build"
+cd src/toybox
+make clean
+make
+cd ../../
+echo "Changing to toybox unstripped"
+chmod 775 src/toybox/toybox-src/generated/unstripped/toybox 
+sudo cp src/toybox/toybox-src/generated/unstripped/toybox com.example.cryptex.dstroot/usr/bin
 codesign --force -s -  com.example.cryptex.dstroot/usr/bin/toybox
 codesign --force -s - --entitlements src/toybox/entitlements.plist com.example.cryptex.dstroot/usr/bin/toybox 
 hdiutil create -fs hfs+ -srcfolder com.example.cryptex.dstroot srd-universal-cryptex.dmg
