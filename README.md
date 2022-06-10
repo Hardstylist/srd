@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-WED 1 JUN 2022 at 0847 EDT
+FRI 10 JUN 2022 at 0800 EDT
 
 ## START HERE
 
