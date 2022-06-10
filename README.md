@@ -51,7 +51,7 @@ SUMMARY
 | T8101 Install to iPhone 12 16.0_20A5283p    | PASS          | PASS          | PASS          | PASS 
 
 
-### SRD Example DMG, Build & Installation Status for iOS 16 w/ + 8020.101.4 
+### SRD Example DMG, Build & Installation Status for iOS 16 w/ + XNU-8020.101.4 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
