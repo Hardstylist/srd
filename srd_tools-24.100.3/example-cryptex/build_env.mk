@@ -1,5 +1,5 @@
-# This ugly hack is to make xnu-8019.41.5 work for building the SRD Universal DMG.
-# Download the Source for https://github.com/apple-oss-distributions/xnu/archive/refs/tags/xnu-8019.41.5.tar.gz
+# This ugly hack is to make xnu-8020.101.4 work for building the SRD Universal DMG.
+# Download the Source for https://github.com/apple-oss-distributions/xnu/archive/refs/tags/xnu-8020.101.4.tar.gz
 # Setup the sdk-graft/include by hand; I'll be updating the Repo to make all this work automagically with updated build and make files
 # There are 3 directories and 24 files in the latest xnu that we need to make the DMG, simple, easy and no magic
 
