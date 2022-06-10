@@ -43,6 +43,8 @@ SUMMARY
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
 
 ### SRD Example DMG, Build & Installation Status for iOS 15 w/ + XNU-8019.41.5 
+| Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
+| -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
 | X86_64 Install to iPhone 11 16.0_20A5283p    | PASS         | PASS         | PASS          | PASS
