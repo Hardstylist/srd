@@ -47,21 +47,21 @@ SUMMARY
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 15.6_19G5037d    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 15.6_19G5027e    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 16.0_20A5283p    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.0_20A5283p    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
 - macOS 12.4 (21F79) X86_64 or M1 T8101 macOS 12.4 (21F79)
 - cryptexctl or CryptexManager on arm64e, CryptexManager on X86_64
-- Xcode Version 13.4 (13F17a)
+- Xcode Version 14.0 beta (14A5228q)
 
 ### Lastest IPSW + Cryptex Installations 
 ```
 Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
 Signed File: iPhone13,2,iPhone13,3_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
-Signed File: iPhone11,8,iPhone12,1_15.6_19G5037d_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-Signed File: iPhone13,2,iPhone13,3_15.6_19G5027e_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone121_16.0_20A5283p_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone132iPhone133_16.0_20A5283p_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
 
 ## Prerequisites
