@@ -7,7 +7,7 @@
 export PROJECT_PATH ?= $(dir $(realpath $(firstword ${MAKEFILE_LIST})))
 
 export TOOLCHAIN ?= iOS16.0
-export MACOS_TOOLCHAIN ?= MacOSX12.0
+export MACOS_TOOLCHAIN ?= MacOSX13.0
 
 export ARCH:=arm64e
 export SDK:=iphoneos
