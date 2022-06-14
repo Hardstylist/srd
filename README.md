@@ -1,6 +1,11 @@
 # Welcome to Hoyt's SRD Repo
-FRI 10 JUN 2022 at 1832 EDT
+TUe 14 JUN 2022 at 1939 EDT
 
+## SUMMARY
+- This Repo is __ahead__ of the Apple Repo
+- Built on 21F79 with X86_64 and arm64e
+- The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
+- iOS16 won't launch cryptex
 ## START HERE
 
 Get the Working Cryptex for iOS 15
@@ -35,13 +40,6 @@ X86_64
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
 ```
-    
-SUMMARY
-----
-- This Repo is __ahead__ of the Apple Repo
-- Built on 21F79 with X86_64 and arm64e
-- The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
-
 ### SRD Example DMG, Build & Installation Status for iOS 15 w/ + XNU-8019.41.5 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
