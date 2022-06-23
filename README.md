@@ -1,14 +1,13 @@
 # Welcome to Hoyt's SRD Repo
-TUe 14 JUN 2022 at 1030 EDT
+THU 23 JUN 2022 at 1200Z
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
-- iOS16 won't launch cryptex
 ## START HERE
 
-Get the Working Cryptex for iOS 15
+Get the Working Cryptex for iOS 14, 15 or 16
 ------
 - wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
 - unzip hoyt-working-example-cryptex.zip
@@ -22,11 +21,13 @@ created: /Users/xss/validate/public-domain/com.example.cryptex.dmg
 ```
 Confirmation
 ```
-# uname -a
-Darwin SRD0009 21.6.0 Darwin Kernel Version 21.6.0: Mon May  9 00:43:43 PDT 2022; root:xnu-8020.140.20.0.4~16/RELEASE_ARM64_T8030 iPhone12,1 Toybox
-# date
-Tue May 31 18:10:33 EDT 2022
+uname -a
+Darwin SRD0037 22.0.0 Darwin Kernel Version 22.0.0: Tue Jun 14 21:59:17 PDT 2022; root:xnu-8792.0.92.122.1~3/RELEASE_ARM64_T8101 iPhone13,2 Toybox
+
+date
+Thu Jun 23 13:04:39 EDT 2022
 ```
+
 - Open an Issue if you have _any_ questions! OR
 - Reach out via DM on Twitter https://twitter.com/h02332
 - arm64e ./example-cryptex/ grab it https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex-plus-compiled-binaries-arm64e.zip
@@ -54,8 +55,8 @@ X86_64
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.0_20A5283p    | FAIL         | FAIL         | FAIL          | FAIL
-| T8101 Install to iPhone 12 16.0_20A5283p    | FAIL          | FAIL          | FAIL          | FAIL 
+| X86_64 Install to iPhone 11 16.0_20A5303i    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.0_20A5303i    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
@@ -67,8 +68,8 @@ X86_64
 ```
 Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
 Signed File: iPhone13,2,iPhone13,3_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
-Signed File: iPhone121_16.0_20A5283p_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-Signed File: iPhone132iPhone133_16.0_20A5283p_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone121_16.0_20A5303i_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone132iPhone133_16.0_20A5303i_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
 
 ## Prerequisites
