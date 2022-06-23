@@ -32,7 +32,7 @@ Thu Jun 23 13:04:39 EDT 2022
 - Reach out via DM on Twitter https://twitter.com/h02332
 - arm64e ./example-cryptex/ grab it https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex-plus-compiled-binaries-arm64e.zip
 
-## SRD DMG Install for iOS 15
+## SRD DMG Install for iOS 14, 15 or 16
 M1 T8101
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
@@ -41,16 +41,7 @@ X86_64
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
 ```
-### SRD Example DMG, Build & Installation Status for iOS 14 & 15 w/ + XNU-8019.41.5 
-| Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
-| -------------------------------- | ------------- | ------------- | ------------- | -------------
-| macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
-| macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.0_20A5283p    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 16.0_20A5283p    | PASS          | PASS          | PASS          | PASS 
-
-
-### SRD Example DMG, Build & Installation Status for iOS 16 w/ + XNU-8020.101.4 
+### SRD Example DMG, Build & Installation Status for iOS 14, 15 or 16 w/ + XNU-8020.101.4 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
