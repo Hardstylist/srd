@@ -22,10 +22,11 @@ created: /Users/xss/validate/public-domain/com.example.cryptex.dmg
 Confirmation
 ```
 uname -a
-Darwin SRD0037 22.0.0 Darwin Kernel Version 22.0.0: Tue Jun 14 21:59:17 PDT 2022; root:xnu-8792.0.92.122.1~3/RELEASE_ARM64_T8101 iPhone13,2 Toybox
+
+SRD0009 CopyPasta Kernel Cache V6.6.6: Fri Jun 24 18:23:53 PDT 2022; root:xnu-8792.0.134.0.1~6/RELEASE_ARM64_T8030 iPhone12,1 cx.srd.toybox.unstripped.666
 
 date
-Thu Jun 23 13:04:39 EDT 2022
+Thu Jul  7 09:48:38 EDT 2022
 ```
 
 - Open an Issue if you have _any_ questions! OR
