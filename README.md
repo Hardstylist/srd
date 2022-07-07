@@ -46,8 +46,8 @@ X86_64
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.0_20A5303i    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 16.0_20A5303i    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 16.0_20A5312g    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.0_20A5312g    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
@@ -59,8 +59,8 @@ X86_64
 ```
 Signed File: iPhone11,8,iPhone12,1_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)' 
 Signed File: iPhone13,2,iPhone13,3_15.5_19F77_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Customer Erase Install (IPSW)'
-Signed File: iPhone121_16.0_20A5303i_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
-Signed File: iPhone132iPhone133_16.0_20A5303i_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone12,1_16.0_20A5312g_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
+Signed File: iPhone13,2,iPhone13,3_16.0_20A5312g_Restore.ipsw | defaults write com.apple.AMPDevicesAgent ipsw-variant -string 'Research Developer Erase Install (IPSW)'
 ```
 
 ## Prerequisites
