@@ -1,9 +1,9 @@
 # SRD Example DMG Installation
 
-## SUMMARY | WED 1 JUN 2022 at 1029 EDT
+## SUMMARY | FRI 8 JUL 2022 at 0600 EDT
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
-- The SRD Example DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 15
+- The SRD Example DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 16
 
 Install SRD example DMG from M1 T8101
 ----
@@ -44,10 +44,11 @@ com.example.cryptex
 - Install: https://github.com/xsscx/srd/tree/main/dmg#readme
 
 # SRD DMG Testing
-- Universal cryptex for iPhone 11 and iPhone 12 SRD Models 
-- Tested on the iPhone 11 for all IPSW from the iOS 14.3 floor for the iPhone 11 up to the latest iOS 15.6 
-- Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 15.6
-- Tested on macOS 11.6.x using SRT 20C80, macOS 12.x using 21F79 and Cryptex Manager from X86_64 and M1 T8101 Platforms 
+- Universal SRD DMG Example Cryptex for iPhone 11 and iPhone 12 SRD Models 
+- Tested on the iPhone 11 for all IPSW from the iOS 14.3 floor for the iPhone 11 up to the latest iOS 16 Beta 
+- Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 16 Beta
+- Tested on macOS 11.6.x using SRT 20C80, macOS 12.x & 13 Beta using X86_64 and M1 T8101 Platforms 
+- Open an Issue if you have _any_ questions!
 
 ## How to Install an example cryptex DMG to the SRD
 ```
