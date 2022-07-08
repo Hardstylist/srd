@@ -40,8 +40,11 @@ com.example.cryptex
 - https://github.com/pinauten/CryptexManager/ is required for cryptex installation on X86_64
 
 ### Resources
-- DMG: https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
+- SRD DMG: https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
 - Install: https://github.com/xsscx/srd/tree/main/dmg#readme
+- SRD Beta: https://xss.cx/srd/dmg/srd-universal-cryptex.dmg
+- SRD UBSAN DMG https://xss.cx/srd/dmg/srd-ubsan-cryptex-beta.dmg
+- SRD ASAN DMG https://xss.cx/srd/dmg/srd-asan-cryptex-beta.dmg
 
 # SRD DMG Testing
 - Universal SRD DMG Example Cryptex for iPhone 11 and iPhone 12 SRD Models 
