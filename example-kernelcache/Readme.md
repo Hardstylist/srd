@@ -1,6 +1,6 @@
 # How to Patch and Boot a KernelCache on an SRD by Hoyt
 
-Updated: FRI 20 MAY 2022 at 0645 EDT
+Updated: SAT 09 JULY 2022 at 0741 EDT
 
 ```
 uname -a
@@ -37,7 +37,7 @@ uname -a
 CopyPasta Kernel Cache
 ```
 
-### SRD Example Kernel Cache Exampleware Installation for 15.4_19E241_Restore.ipsw
+### SRD Kernel Cache Exampleware Installation for 15.4_19E241_Restore.ipsw
 
 | Build OS & Device Info           | Example Kernel Cache
 | -------------------------------- | ------------- 
