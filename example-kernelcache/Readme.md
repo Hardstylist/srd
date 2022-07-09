@@ -37,6 +37,12 @@ uname -a
 CopyPasta Kernel Cache
 ```
 
+### SRD Example Kernel Cache Exampleware Installation for 15.4_19E241_Restore.ipsw
+
+| Build OS & Device Info           | Example Kernel Cache
+| -------------------------------- | ------------- 
+| iPhone 11 & 12 iOS 15.4 (19E241)       | PASS  
+
 Below is verbatim from SRD Tools from Apple
 -----
 # Patching and booting a KernelCache
