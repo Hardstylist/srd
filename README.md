@@ -1,47 +1,20 @@
 # Welcome to Hoyt's SRD Repo
-THU 07 JUL 2022 at 0947 EDT
+TUE 19 JUL 2022 at 0637 EDT
 
 ## SUMMARY
+- Apple has recent PR's that FIX the Build Issues
+- The recent PR's work 100%
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 16
+
 ## START HERE
 
-Get the Working Cryptex for iOS 14, 15 or 16
-------
-- wget https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex.zip
-- unzip hoyt-working-example-cryptex.zip
-- cd public-domain
-- make install 
-```
-[public-domain] - Creating disk image com.example.cryptex.dmg from distribution root /Users/xss/validate/public-domain/com.example.cryptex.dstroot
-....................................................................................................................................................................................................................................................................................
-created: /Users/xss/validate/public-domain/com.example.cryptex.dmg
-[public-domain] - Creating cryptex /Users/xss/validate/public-domain/com.example.cryptex.cxbd - 1.3.3.7 from the disk image com.example.cryptex.dmg
-```
-Confirmation
-```
-uname -a
-
-SRD0009 CopyPasta Kernel Cache V6.6.6: Fri Jun 24 18:23:53 PDT 2022; root:xnu-8792.0.134.0.1~6/RELEASE_ARM64_T8030 iPhone12,1 cx.srd.toybox.unstripped.666
-
-date
-Thu Jul  7 09:48:38 EDT 2022
-```
-
-- Open an Issue if you have _any_ questions! OR
-- Reach out via DM on Twitter https://twitter.com/h02332
-- arm64e ./example-cryptex/ grab it https://xss.cx/srd/example-cryptex/hoyt-working-example-cryptex-plus-compiled-binaries-arm64e.zip
-
-## SRD DMG Install for iOS 14, 15 or 16
-M1 T8101
+Install the Pre-Built SRD DMG
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
-X86_64 
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
-```
+
 ### SRD Example DMG, Build & Installation Status for iOS 14, 15 or 16 w/ + XNU-8020.101.4 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
