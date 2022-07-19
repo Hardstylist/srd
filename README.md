@@ -1,12 +1,15 @@
 # Welcome to Hoyt's SRD Repo
-TUE 19 JUL 2022 at 0637 EDT
+TUE 19 JUL 2022 at 0718 EDT
 
 ## SUMMARY
-- Apple has recent PR's that FIX some of the Build Issues
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
 - The DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 16
-
+- Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
+```
+nm -a com.example.cryptex.dstroot/usr/bin/toybox | wc -l
+     932
+```
 ## START HERE
 
 Install the Pre-Built SRD DMG
