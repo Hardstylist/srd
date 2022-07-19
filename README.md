@@ -2,7 +2,7 @@
 TUE 19 JUL 2022 at 0637 EDT
 
 ## SUMMARY
-- Apple has recent PR's that FIX the Build Issues
+- Apple has recent PR's that FIX some of the Build Issues
 - The recent PR's work 100%
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
