@@ -1,6 +1,6 @@
 # SRD Example DMG Installation
 
-## SUMMARY | FRI 8 JUL 2022 at 0600 EDT
+## SUMMARY | TUE 18 JUL 2022 at 0739 EDT
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
 - The SRD Example DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 16
@@ -14,16 +14,22 @@ Install SRD example DMG
 Audit Trail
 ----
 ```
---2022-01-17 14:12:26--  https://xss.cx/srd/dmg/srd-universal-cryptex.dmg
-Resolving xss.cx (xss.cx)... 50.62.160.45
-Connecting to xss.cx (xss.cx)|50.62.160.45|:443... connected.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
+--2022-07-19 07:35:26--  https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
+Resolving github.com (github.com)... 140.82.113.4
+Connecting to github.com (github.com)|140.82.113.4|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://raw.githubusercontent.com/xsscx/srd/main/dmg/srd-universal-cryptex.dmg [following]
+--2022-07-19 07:35:27--  https://raw.githubusercontent.com/xsscx/srd/main/dmg/srd-universal-cryptex.dmg
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 27295841 (26M) [application/x-zip-compressed]
+Length: 24874849 (24M) [application/octet-stream]
 Saving to: ‘srd-universal-cryptex.dmg’
 
-srd-universal-cryptex.dmg                                                                                100%[=================================================================================================================================================================================================================================================================================>]  26.03M  3.32MB/s    in 8.3s
+srd-universal-cryptex.dmg                   100%[========================================================================================>]  23.72M  11.4MB/s    in 2.1s
 
-2022-01-17 14:12:35 (3.12 MB/s) - ‘srd-universal-cryptex.dmg’ saved [27295841/27295841]
+2022-07-19 07:35:29 (11.4 MB/s) - ‘srd-universal-cryptex.dmg’ saved [24874849/24874849]
 
 com.example.cryptex
   version = 1.3.3.7
