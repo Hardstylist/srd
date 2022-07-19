@@ -33,7 +33,7 @@ com.example.cryptex
   
 ## Prerequisites
 - Security Research Tools https://github.com/apple/security-research-device
-- https://github.com/pinauten/CryptexManager/ is required for cryptex installation on X86_64
+
 
 ### Resources
 - SRD DMG: https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
