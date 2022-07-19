@@ -351,9 +351,11 @@ com.example.cryptex.dstroot
     │   ├── [ -> toybox
     │   ├── a.out
     │   ├── ascii -> toybox
+    │   ├── base32 -> toybox
     │   ├── base64 -> toybox
     │   ├── basename -> toybox
     │   ├── bash -> toybox
+    │   ├── bzcat -> toybox
     │   ├── c1.exr
     │   ├── c2.exr
     │   ├── cal -> toybox
@@ -405,6 +407,7 @@ com.example.cryptex.dstroot
     │   ├── help -> toybox
     │   ├── hexedit -> toybox
     │   ├── hostname -> toybox
+    │   ├── httpd -> toybox
     │   ├── iconv -> toybox
     │   ├── id -> toybox
     │   ├── image.jpeg
@@ -418,13 +421,13 @@ com.example.cryptex.dstroot
     │   ├── killall5 -> toybox
     │   ├── leak64
     │   ├── libarchive.a
-    │   ├── libclang_rt.asan_ios_dynamic.dylib
     │   ├── libmemctl_core.a
     │   ├── link -> toybox
     │   ├── ln -> toybox
     │   ├── logger -> toybox
     │   ├── logname -> toybox
     │   ├── ls -> toybox
+    │   ├── mcookie -> toybox
     │   ├── md5sum -> toybox
     │   ├── memctl
     │   ├── microcom -> toybox
@@ -449,6 +452,8 @@ com.example.cryptex.dstroot
     │   ├── printf -> toybox
     │   ├── pwd -> toybox
     │   ├── pwdx -> toybox
+    │   ├── pwgen -> toybox
+    │   ├── readelf -> toybox
     │   ├── readlink -> toybox
     │   ├── realpath -> toybox
     │   ├── register-tests.sh
@@ -548,6 +553,7 @@ com.example.cryptex.dstroot
     │   ├── sha384sum -> toybox
     │   ├── sha3sum -> toybox
     │   ├── sha512sum -> toybox
+    │   ├── shred -> toybox
     │   ├── simple-server
     │   ├── simple-shell
     │   ├── sleep -> toybox
@@ -574,6 +580,7 @@ com.example.cryptex.dstroot
     │   ├── truncate -> toybox
     │   ├── tty -> toybox
     │   ├── uname -> toybox
+    │   ├── unicode -> toybox
     │   ├── uniq -> toybox
     │   ├── unix2dos -> toybox
     │   ├── unlink -> toybox
@@ -598,5 +605,5 @@ com.example.cryptex.dstroot
         └── frida
             └── frida-agent.dylib
 
-6 directories, 254 files
+6 directories, 261 files
 ```
