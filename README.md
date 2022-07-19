@@ -28,7 +28,7 @@ Install the Pre-Built SRD DMG
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
 - macOS 12.4 (21F79) X86_64 or M1 T8101 macOS 12.4 (21F79)
-- cryptexctl or CryptexManager on arm64e, CryptexManager on X86_64
+- cryptexctl or CryptexManager
 - Xcode Version 14.0 beta (14A5228q)
 
 ### Lastest IPSW Installations 
