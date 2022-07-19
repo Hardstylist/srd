@@ -5,16 +5,12 @@
 - Built on 21F79 with X86_64 and arm64e
 - The SRD Example DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 16
 
-Install SRD example DMG from M1 T8101
+Install SRD example DMG
 ----
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
-Install SRD example DMG from X86_64 
-----
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/srd_tools-24.100.3/example-cryptex/cryptexmanager-install.sh)" 
-```
+
 Audit Trail
 ----
 ```
