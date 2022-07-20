@@ -20,8 +20,8 @@ Install the Pre-Built SRD DMG
 ### SRD Example DMG, Build & Installation Status for iOS 14, 15 or 16 w/ + XNU-8020.101.4 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
-| macOS 12.4 (21F79) X86_64       | PASS          | PASS          | PASS          | PASS          
-| macOS 12.4 (21F79) T8101  | PASS          | PASS          | PASS          | PASS 
+| macOS 12.5 (21G72) X86_64       | PASS          | PASS          | PASS          | PASS          
+| macOS 13 Beta T8101  | PASS          | PASS          | PASS          | PASS 
 | X86_64 Install to iPhone 11 16.0_20A5312g    | PASS         | PASS         | PASS          | PASS
 | T8101 Install to iPhone 12 16.0_20A5312g    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
