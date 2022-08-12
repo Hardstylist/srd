@@ -7,8 +7,8 @@ FRI 12 AUG 2022 at 0800 EDT
 - The DMG's are all Built with XNU-8020.101.4 and options Targeting for iOS 16
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
 ```
-nm -a com.example.cryptex.dstroot/usr/bin/toybox | wc -l
-     932
+nm -a com.example.cryptex.dstroot/usr/bin/toybox  | wc -l
+     934
 ```
 ## START HERE
 
