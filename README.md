@@ -22,8 +22,8 @@ Install the Pre-Built SRD DMG
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.5 (21G72) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 13 Beta T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.0_20A5312g    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 16.0_20A5312g    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 16.0_20A5349b    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.0_20A5349b    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
@@ -72,8 +72,8 @@ Signed File: iPhone13,2,iPhone13,3_16.0_20A5328h_Restore.ipsw | defaults write c
     - Example Binaries in /bin
 # SRD DMG Testing
 - Universal cryptex for iPhone 11 and iPhone 12 SRD Models 
-- Tested on the iPhone 11 for all IPSW from the iOS 14.3 floor for the iPhone 11 up to the latest iOS 15.6 
-- Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 15.6
+- Tested on the iPhone 11 for all IPSW from the iOS 14.3 floor for the iPhone 11 up to the latest iOS 16 
+- Tested on the iPhone 12 for all IPSW from the iOS 15.2 floor for the iPhone 12 up to the latest iOS 16
 - Tested on macOS 11.6.x using SRT 20C80, macOS 12.x using 21F79 and Cryptex Manager from X86_64 and M1 T8101 Platforms 
 
 SRD Cryptex Log Collector
