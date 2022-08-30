@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-FRI 12 AUG 2022 at 0800 EDT
+TUe 130 AUG 2022 at 0800 EDT
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
@@ -22,8 +22,8 @@ Install the Pre-Built SRD DMG
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.5 (21G72) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 13 Beta T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.0_20A5349b    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 16.0_20A5349b    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 16.0_20A5356a    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.0_20A5356a    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
