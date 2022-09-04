@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-TUE 1030 AUG 2022 at 0800 EDT
+SUN 13 SEP 2022 at 0800 EDT
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
@@ -17,13 +17,13 @@ Install the Pre-Built SRD DMG
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
 
-### SRD Example DMG, Build & Installation Status for iOS 14, 15 or 16 w/ + XNU-8020.101.4 
+### SRD Example DMG, Build & Installation Status for iOS 16 w/ + XNU-8020.101.4 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 12.5 (21G72) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 13 Beta T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.0_20A5356a    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 16.0_20A5356a    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 16.0_20A5358a    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.0_20A5358a    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
