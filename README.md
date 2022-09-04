@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-SUN 13 SEP 2022 at 0800 EDT
+SUN 4 SEP 2022 at 1400 EDT
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
