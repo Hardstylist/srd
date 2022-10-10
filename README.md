@@ -1,20 +1,6 @@
 # Welcome to Hoyt's SRD Repo
-FRI 23 SEP 2022 at 1100 EDT
+MON 10 OCT 2022 at 1651 EDT
 
-Nice Work to All at Apple: 
-```
-Hi D,
-
-Thanks for your feedback, and for your patience.  Apologies for the delay. We believe this has been addressed.
-We made launchd debuggable via a kernel patch, which should resolve this issue, shipped with kc tutorial on researcher GitHub.
-Please close if resolved, or let us know if still an issue for you.
-Thank you.
-
-To update your report: https://feedbackassistant.apple.com/
-To close, on the Feedback site, click the Actions button, choose Close Feedback and click Close.
-To collect logging or screen recording: https://developer.apple.com/bug-reporting/profiles-and-logs/
-Feedback ID 9737956, SRD | 19C5026i | Entitlement | research.com.apple.license-to-operate 
-```
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
 - Built on 21F79 with X86_64 and arm64e
@@ -34,10 +20,10 @@ Install the Pre-Built SRD DMG
 ### SRD Example DMG, Build & Installation Status for iOS 16.x w/ + XNU-8020.101.4 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
-| macOS 12.5 (21G72) X86_64       | PASS          | PASS          | PASS          | PASS          
+| macOS 12.6 (21G115) X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 13 Beta T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.1_20B5050f    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 16.1_20B5050f    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 16.1_20B5064c    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.1_20B5064c    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
