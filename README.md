@@ -22,8 +22,8 @@ Install the Pre-Built SRD DMG
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 13.0.1 22A400 X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 13 Beta T8101  | PASS          | PASS          | PASS          | PASS 
-| X86_64 Install to iPhone 11 16.1_20B5064c    | PASS         | PASS         | PASS          | PASS
-| T8101 Install to iPhone 12 16.1_20B5064c    | PASS          | PASS          | PASS          | PASS 
+| X86_64 Install to iPhone 11 16.2_20C5049e    | PASS         | PASS         | PASS          | PASS
+| T8101 Install to iPhone 12 16.2_20C5049e    | PASS          | PASS          | PASS          | PASS 
 * X86_64 Install with CryptexManager
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
