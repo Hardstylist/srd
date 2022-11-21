@@ -1,5 +1,5 @@
 # Welcome to Hoyt's SRD Repo
-MON 10 OCT 2022 at 1651 EDT
+SUN 20 NOV 2022 at 2000 EST
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
@@ -20,7 +20,7 @@ Install the Pre-Built SRD DMG
 ### SRD Example DMG, Build & Installation Status for iOS 16.x w/ + XNU-8020.101.4 
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
-| macOS 12.6 (21G115) X86_64       | PASS          | PASS          | PASS          | PASS          
+| macOS 13.0.1 22A400 X86_64       | PASS          | PASS          | PASS          | PASS          
 | macOS 13 Beta T8101  | PASS          | PASS          | PASS          | PASS 
 | X86_64 Install to iPhone 11 16.1_20B5064c    | PASS         | PASS         | PASS          | PASS
 | T8101 Install to iPhone 12 16.1_20B5064c    | PASS          | PASS          | PASS          | PASS 
