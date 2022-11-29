@@ -1,13 +1,8 @@
-# This ugly hack is to make xnu-8020.101.4 work for building the SRD Universal DMG.
-# Download the Source for https://github.com/apple-oss-distributions/xnu/archive/refs/tags/xnu-8020.101.4.tar.gz
-# Setup the sdk-graft/include by hand; I'll be updating the Repo to make all this work automagically with updated build and make files
-# There are 3 directories and 24 files in the latest xnu that we need to make the DMG, simple, easy and no magic
-
 # Set up all the variables we need to compile command line iOS applications
 export PROJECT_PATH ?= $(dir $(realpath $(firstword ${MAKEFILE_LIST})))
 
-export TOOLCHAIN ?= iOS16.0
-export MACOS_TOOLCHAIN ?= MacOSX13.0
+export TOOLCHAIN ?= iOS14.0
+export MACOS_TOOLCHAIN ?= MacOSX11.0
 
 export ARCH:=arm64e
 export SDK:=iphoneos
@@ -81,24 +76,21 @@ ${LOCAL_INCLUDE_DIR}/IOKit/%.h: ${MACOS_SDK_PATH}/System/Library/Frameworks/IOKi
 
 # --------------
 # This section deals with grabbing XNU and extracting headers from it
-# export XNU_VERSION=xnu-6153.81.5
-# export XNU_VERSION=xnu-7195.141.2
-# export XNU_VERSION=xnu-8019.41.5
-export XNU_VERSION=xnu-8020.101.4
+export XNU_VERSION=xnu-6153.81.5
 
 .PHONY: gather-xnu-headers
 gather-xnu-headers: ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}
 
 ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}: ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz
-#	cd ${SDK_GRAFT_DOWNLOADS} && tar -xf ${XNU_VERSION}.tar.gz
+	# Ensure the name of the destination directory is ${XNU_VERSION}
+	cd ${SDK_GRAFT_DOWNLOADS} && \
+	mkdir ${XNU_VERSION} && \
+	tar -xf ${XNU_VERSION}.tar.gz -C ${XNU_VERSION} --strip-components 1
 
 ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz:
 	@$(log_download)
 	mkdir -p ${SDK_GRAFT_DOWNLOADS}
 	curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/${XNU_VERSION}.tar.gz
-#	Use Apple specified URL instead of below...
-#	curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/refs/tags/${XNU_VERSION}.tar.gz
-#	Note that this file isn't used for the SRD Universal Cryptex BuildBot.. see build_env_test-xnu-8019.41.5.mk 
 
 sdk-graft-clean:
 	rm -rf ${SDK_GRAFT_DIR}
