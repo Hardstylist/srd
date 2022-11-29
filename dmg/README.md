@@ -3,7 +3,7 @@
 ## SUMMARY | TUE 29 NOV 2022 at 0715 EST
 - This Repo is __ahead__ of the Apple Repo
 - Built on macOS 13.x with X86_64 and arm64e
-- The SRD Example DMG's are all Built with XNU-8019.41.5 and options Targeting for iOS 16
+- The SRD Example DMG's are all Built with XNU-8792.60.55 and options Targeting for iOS 16
 
 Install SRD example DMG
 ----
