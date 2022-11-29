@@ -1,10 +1,10 @@
 # Welcome to Hoyt's SRD Repo
-SUN 29 NOV 2022 at 0651 EST
+SUN 29 NOV 2022 at 1647 EST
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
 - Built on macOS 13.x X86_64 & arm64e
-- The DMG's are all Built with XNU-8020.101.4 and options Targeting for iOS 16
+- The DMG's are all Built with XNU 8792.60.55 and options Targeting for iOS 16
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
 ```
 nm -a com.example.cryptex.dstroot/usr/bin/toybox  | wc -l
@@ -17,7 +17,7 @@ Install the Pre-Built SRD DMG
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
 
-### SRD Example DMG, Build & Installation Status for iOS 16.x w/ + XNU-8020.101.4 
+### SRD Example DMG, Build & Installation Status for iOS 16.x w/ + 8792.60.55
 | Build OS & Device Info           | Example DMG   |  debugserver DMG  |  ASAN DMG     | UBSAN DMG 
 | -------------------------------- | ------------- | ------------- | ------------- | -------------
 | macOS 13.0.1 22A400 X86_64       | PASS          | PASS          | PASS          | PASS          
@@ -27,9 +27,9 @@ Install the Pre-Built SRD DMG
 
 ## Last Known Good Working Configuration(s)
 - SIP Enabled
-- macOS 12.4 (21F79) X86_64 or M1 T8101 macOS 12.4 (21F79)
+- macOS 13.x X86_64 or M1 T8101 macOS 13.x
 - cryptexctl or CryptexManager
-- Xcode Version 14.0 beta (14A5228q)
+- Xcode beta
 
 ### Lastest IPSW Installations 
 ```
