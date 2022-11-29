@@ -3,7 +3,7 @@ SUN 29 NOV 2022 at 0651 EST
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
-- Built on macOS 13.x X86_64 & amr64e
+- Built on macOS 13.x X86_64 & arm64e
 - The DMG's are all Built with XNU-8020.101.4 and options Targeting for iOS 16
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
 ```
