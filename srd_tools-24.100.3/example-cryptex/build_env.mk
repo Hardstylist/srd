@@ -34,19 +34,19 @@ export CPPFLAGS= -DUSE_GETCWD -isysroot ${SDKROOT} -arch arm64 -I${LOCAL_INCLUDE
 
 # Make sure the two SDK directories exist
 check-sdks:
-	@$(call log, Checking for macOS SDK at ${MACOS_SDK_PATH})
-	$(if $(ifndef $(MACOS_SDK_PATH)),$(error "No MACOS_SDK_PATH defined, macOS SDK could not be located. Have you selected your Xcode install with xcode-select(1)?"))
-	stat "$(MACOS_SDK_PATH)" > /dev/null
-	@$(call log, Checking for iOS SDK at ${SDKROOT})
-	$(if $(ifndef $(SDK_PATH)),$(error "No SDK_PATH defined, iPhone SDK could not be located. Have you selected your Xcode install with xcode-select(1)?"))
-	stat "$(SDK_PATH)" > /dev/null
+        @$(call log, Checking for macOS SDK at ${MACOS_SDK_PATH})
+        $(if $(ifndef $(MACOS_SDK_PATH)),$(error "No MACOS_SDK_PATH defined, macOS SDK could not be located. Have you selected your Xcode install with xcode-select(1)?"))
+        stat "$(MACOS_SDK_PATH)" > /dev/null
+        @$(call log, Checking for iOS SDK at ${SDKROOT})
+        $(if $(ifndef $(SDK_PATH)),$(error "No SDK_PATH defined, iPhone SDK could not be located. Have you selected your Xcode install with xcode-select(1)?"))
+        stat "$(SDK_PATH)" > /dev/null
 
 # Extend clean to include common-clean
 clean: common-clean
 
 # common-clean should depend on all the bits we need to clean up here
 common-clean: sdk-graft-clean
-	@$(call log_clean)
+        @$(call log_clean)
 
 # --------------------------------------
 # This section is concerned with extracting headers from the SDK
@@ -54,10 +54,10 @@ common-clean: sdk-graft-clean
 # Gather headers from the macOS SDK and XNU
 .PHONY: sdk-graft
 sdk-graft: check-sdks gather-xnu-headers
-	# Since we don't have an SDK that provides the headers we need, we'll need to just *borrow*
-	# some bits from the macOS SDK...
-	@$(call log, Creating SDK header graft...)
-	mkdir -p ${LOCAL_INCLUDE_DIR}
+        # Since we don't have an SDK that provides the headers we need, we'll need to just *borrow*
+        # some bits from the macOS SDK...
+        @$(call log, Creating SDK header graft...)
+        mkdir -p ${LOCAL_INCLUDE_DIR}
 
 # The pattern here is to append your file to the requirements for sdk-graft
 sdk-graft: ${LOCAL_INCLUDE_DIR}/sys/disk.h
@@ -66,32 +66,33 @@ sdk-graft: ${LOCAL_INCLUDE_DIR}/libkern/OSTypes.h
 
 # This pattern rule will graft a header from the macOS SDK into our sdk-graft
 ${LOCAL_INCLUDE_DIR}/%: ${MACOS_SDK_PATH}/usr/include/%
-	mkdir -p $(dir $@)
-	cp $< $@
+        mkdir -p $(dir $@)
+        cp $< $@
 
 # This pattern rule will graft an IOKit header from the macOS SDK into our sdk-graft
 ${LOCAL_INCLUDE_DIR}/IOKit/%.h: ${MACOS_SDK_PATH}/System/Library/Frameworks/IOKit.framework/Versions/Current/Headers/%.h
-	mkdir -p ${LOCAL_INCLUDE_DIR}/IOKit/
-	cp $< $@
+        mkdir -p ${LOCAL_INCLUDE_DIR}/IOKit/
+        cp $< $@
 
 # --------------
 # This section deals with grabbing XNU and extracting headers from it
 # export XNU_VERSION=xnu-6153.81.5
 # export XNU_VERSION=xnu-7195.141.2
 # export XNU_VERSION=xnu-8019.41.5
-# export XNU_VERSION=xnu-8020.101.4
-export XNU_VERSION=xnu-8792.60.55
+export XNU_VERSION=xnu-8020.101.4
+# export XNU_VERSION=xnu-8792.60.55
 
 .PHONY: gather-xnu-headers
 gather-xnu-headers: ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}
 
 ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}: ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz
-	cd ${SDK_GRAFT_DOWNLOADS} && tar -xf ${XNU_VERSION}.tar.gz
+#       cd ${SDK_GRAFT_DOWNLOADS} && tar -xf ${XNU_VERSION}.tar.gz
 
 ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz:
-	@$(log_download)
-	mkdir -p ${SDK_GRAFT_DOWNLOADS}
-	curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/refs/tags/${XNU_VERSION}.tar.gz
+        @$(log_download)
+#       mkdir -p ${SDK_GRAFT_DOWNLOADS}
+#       curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/refs/tags/${XNU_VERSION}.tar.gz
 
 sdk-graft-clean:
-	rm -rf ${SDK_GRAFT_DIR}
+#       rm -rf ${SDK_GRAFT_DIR}
+xss@mini iphone11 %
