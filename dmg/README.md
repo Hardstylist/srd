@@ -35,6 +35,12 @@ com.example.cryptex
   version = 1.3.3.7
   device = /dev/disk3s1
   mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.dYJjm9
+  
+ssh -l root 192.168.1.25
+uname -a
+Darwin iPhone 22.2.0 Darwin Kernel Version 22.2.0: Tue Nov  8 21:14:57 PST 2022; root:xnu-8792.60.55.132.1~1/RELEASE_ARM64_T8030 iPhone12,1 Toybox
+date
+Tue Nov 29 08:57:31 EST 2022
   ```
   
 ## Prerequisites
