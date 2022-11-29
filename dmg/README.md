@@ -15,26 +15,26 @@ Audit Trail
 ----
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
---2022-07-19 07:35:26--  https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
-Resolving github.com (github.com)... 140.82.113.4
-Connecting to github.com (github.com)|140.82.113.4|:443... connected.
+--2022-11-29 07:35:02--  https://github.com/xsscx/srd/raw/main/dmg/srd-universal-cryptex.dmg
+Resolving github.com (github.com)... 140.82.112.4
+Connecting to github.com (github.com)|140.82.112.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/xsscx/srd/main/dmg/srd-universal-cryptex.dmg [following]
---2022-07-19 07:35:27--  https://raw.githubusercontent.com/xsscx/srd/main/dmg/srd-universal-cryptex.dmg
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.111.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+--2022-11-29 07:35:03--  https://raw.githubusercontent.com/xsscx/srd/main/dmg/srd-universal-cryptex.dmg
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 24874849 (24M) [application/octet-stream]
+Length: 24854157 (24M) [application/octet-stream]
 Saving to: ‘srd-universal-cryptex.dmg’
 
-srd-universal-cryptex.dmg                   100%[========================================================================================>]  23.72M  11.4MB/s    in 2.1s
+srd-universal-cryptex.dmg                                           100%[===================================================================================================================================================================>]  23.70M  82.1MB/s    in 0.3s
 
-2022-07-19 07:35:29 (11.4 MB/s) - ‘srd-universal-cryptex.dmg’ saved [24874849/24874849]
+2022-11-29 07:35:03 (82.1 MB/s) - ‘srd-universal-cryptex.dmg’ saved [24854157/24854157]
 
 com.example.cryptex
   version = 1.3.3.7
-  device = /dev/disk2s1
-  mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.yobZuo
+  device = /dev/disk3s1
+  mount point = /private/var/run/com.apple.security.cryptexd/mnt/com.example.cryptex.dYJjm9
   ```
   
 ## Prerequisites
