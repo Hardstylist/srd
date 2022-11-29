@@ -95,7 +95,10 @@ ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}: ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar
 ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz:
 	@$(log_download)
 	mkdir -p ${SDK_GRAFT_DOWNLOADS}
-	curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/refs/tags/${XNU_VERSION}.tar.gz
+	curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/${XNU_VERSION}.tar.gz
+#	Use Apple specified URL instead of below...
+#	curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/refs/tags/${XNU_VERSION}.tar.gz
+#	Note that this file isn't used for the SRD Universal Cryptex BuildBot.. see build_env_test-xnu-8019.41.5.mk 
 
 sdk-graft-clean:
 	rm -rf ${SDK_GRAFT_DIR}
