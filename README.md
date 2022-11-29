@@ -1,9 +1,9 @@
 # Welcome to Hoyt's SRD Repo
-SUN 20 NOV 2022 at 2000 EST
+SUN 29 NOV 2022 at 0651 EST
 
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
-- Built on 21F79 with X86_64 and arm64e
+- Built on macOS 13.x X86_64 & amr64e
 - The DMG's are all Built with XNU-8020.101.4 and options Targeting for iOS 16
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
 ```
