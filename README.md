@@ -8,7 +8,7 @@ SUN 29 NOV 2022 at 0651 EST
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
 ```
 nm -a com.example.cryptex.dstroot/usr/bin/toybox  | wc -l
-     934
+     941
 ```
 ## START HERE
 
