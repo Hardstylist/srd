@@ -90,7 +90,7 @@ ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}: ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar
 
 ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz:
 	@$(log_download)
-#	mkdir -p ${SDK_GRAFT_DOWNLOADS}
+	mkdir -p ${SDK_GRAFT_DOWNLOADS}
 	curl -sSL -o ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz https://github.com/apple-oss-distributions/xnu/archive/refs/tags/${XNU_VERSION}.tar.gz
 
 sdk-graft-clean:
