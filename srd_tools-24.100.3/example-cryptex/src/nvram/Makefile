@@ -19,7 +19,7 @@ ${SYSTEM_CMDS_VERSION}: ${SYSTEM_CMDS_VERSION}.tar.gz
 
 ${SYSTEM_CMDS_VERSION}.tar.gz:
 	@$(log_download)
-	curl -sSL -O https://opensource.apple.com/tarballs/system_cmds/${SYSTEM_CMDS_VERSION}.tar.gz
+	curl -sSL -O https://github.com/apple-oss-distributions/system_cmds/archive/${SYSTEM_CMDS_VERSION}.tar.gz
 
 clean:
 	rm -rf nvram*
