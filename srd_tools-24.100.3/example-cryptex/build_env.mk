@@ -79,8 +79,13 @@ ${LOCAL_INCLUDE_DIR}/IOKit/%.h: ${MACOS_SDK_PATH}/System/Library/Frameworks/IOKi
 # export XNU_VERSION=xnu-6153.81.5
 # export XNU_VERSION=xnu-7195.141.2
 # export XNU_VERSION=xnu-8019.41.5
-export XNU_VERSION=xnu-8020.101.4
-# export XNU_VERSION=xnu-8792.60.55
+# export XNU_VERSION=xnu-8020.101.4
+# FIXED .. Now using... 
+export XNU_VERSION=xnu-8792.60.55
+
+# Download and uppack manually for better results and faster build time.. 
+#  cd sdk-graft-downloads/; wget https://github.com/apple-oss-distributions/xnu/archive/refs/heads/main.zip; unzip main.zip
+#  or just use the srd-universal-cryptex.dmg 
 
 .PHONY: gather-xnu-headers
 gather-xnu-headers: ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}
@@ -95,4 +100,3 @@ ${SDK_GRAFT_DOWNLOADS}/${XNU_VERSION}.tar.gz:
 
 sdk-graft-clean:
 #       rm -rf ${SDK_GRAFT_DIR}
-xss@mini iphone11 %
