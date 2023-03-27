@@ -4,12 +4,6 @@ Current executable set to 'cryptexctl' (x86_64).
 (lldb) settings set -- target.run-args  "install" "-p" "-l" "--variant=research" "--persist" "com.example.cryptex.cxbd.signed"
 (lldb) r
 Process 52727 launched: '/usr/local/bin/cryptexctl' (x86_64)
-objc[52727]: Class AppleTypeCRetimerRestoreInfoHelper is implemented in both /usr/lib/libauthinstall.dylib (0x7ff952b32dc0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x100d64880). One of the two will be used. Which one is undefined.
-objc[52727]: Class AppleTypeCRetimerFirmwareAggregateRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x7ff952b32e10) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x100d648d0). One of the two will be used. Which one is undefined.
-objc[52727]: Class AppleTypeCRetimerFirmwareRequestCreator is implemented in both /usr/lib/libauthinstall.dylib (0x7ff952b32e60) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x100d64920). One of the two will be used. Which one is undefined.
-objc[52727]: Class ATCRTRestoreInfoFTABFile is implemented in both /usr/lib/libauthinstall.dylib (0x7ff952b32eb0) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x100d64970). One of the two will be used. Which one is undefined.
-objc[52727]: Class AppleTypeCRetimerFirmwareCopier is implemented in both /usr/lib/libauthinstall.dylib (0x7ff952b32f00) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x100d649c0). One of the two will be used. Which one is undefined.
-objc[52727]: Class ATCRTRestoreInfoFTABSubfile is implemented in both /usr/lib/libauthinstall.dylib (0x7ff952b32f50) and /Library/Apple/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/MobileDevice (0x100d64a10). One of the two will be used. Which one is undefined.
 2022-03-15 13:37:13.956475-0400 cryptexctl[52727:205782] [library] USBMuxListenerCreateFiltered:898 Created 0x600003300000
 2022-03-15 13:37:13.956585-0400 cryptexctl[52727:205801] [library] USBMuxHandleDictionary:1437 Adding event 0x600000218020 to changelist.
 2022-03-15 13:37:13.958234-0400 cryptexctl[52727:205782] [device-manager] [anonymous]: devices list = (
