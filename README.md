@@ -1,7 +1,6 @@
 # Welcome to Hoyt's SRD Repo
-1 DEC 2022 at 2145 EST
 ```
-This Repo is now Archived
+This Repo is was Archived 15 DEC 2022 but I still update various Code, Tooling, Script, Crashes and PoC's etc..
 ```
 ## SUMMARY
 - This Repo is __ahead__ of the Apple Repo
