@@ -3,7 +3,6 @@
 Hi! 
 I am David Hoyt. 
 I was in the Apple Security Research Device Program for 2021 & 2022.
-Required Reading: https://github.com/xsscx/srd/issues?q=is%3Aissue+is%3Aclosed 
 Apple sent me an iPhone 11 & iPhone 12 for A/B testing, very helpful. 
 I still update various Code, Tooling, Script, Crashes and PoC's etc..
 I am still processing over 100Tb of Data generated during those 2 years with thousands of Crashes. 
@@ -15,8 +14,10 @@ Some of the Code and Goodies are in this Repo
 - The DMG's are all Built with XNU 8792.60.55 and options Targeting for iOS 16
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
 - Largest Public Code Repo for the Apple Security Research Device with all details provide
-- Open an Issue or Ask a Question
 - iOSOnMAC Fuzzing native iOS Apps on macOS - https://github.com/xsscx/macos-research/tree/main/code/iOSOnMac
+- Required Reading - https://github.com/xsscx/srd/issues?q=is%3Aissue+is%3Aclosed
+- Open an Issue or Ask a Question
+- See https://github.com/xsscx/macos-research
 
 Toybox Unstripped
 -----------
