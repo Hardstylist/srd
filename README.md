@@ -10,6 +10,7 @@ I am still processing over 100Tb of Data generated during those 2 years with tho
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
 - Largest Public Code Repo for the Apple Security Research Device with all details provide
 - Open an Issue or Ask a Question
+- iOSOnMAC Fuzzing native iOS Apps on macOS - https://github.com/xsscx/macos-research/tree/main/code/iOSOnMac
 
 Toybox Unstripped
 -----------
