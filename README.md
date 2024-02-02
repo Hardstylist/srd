@@ -1,19 +1,24 @@
 # Welcome to Hoyt's SRD Repo
 ```
-This Repo is was Archived 15 DEC 2022 but I still update various Code, Tooling, Script, Crashes and PoC's etc..
+Hi! I am David Hoyt. I was in the Apple Security Research Device Program for 2021 & 2022. I have an iPhone 11 & iPhone 12 for A/B tessting. I still update various Code, Tooling, Script, Crashes and PoC's etc.. I am still processing over 100Tb of Data generated during those 2 years with thousands of Crashes. Some of the Code and Goodies are in this Repo.
 ```
 ## SUMMARY
-- This Repo is __ahead__ of the Apple Repo
+- This Repo was __ahead__ of the Apple Repo as of December 15, 2022 when I returned my Devices
 - Built on macOS 13.x X86_64 & arm64e
 - The DMG's are all Built with XNU 8792.60.55 and options Targeting for iOS 16
 - Frida, Toybox Unstripped, SSH, debugserver, other example Register Code
+- Largest Public Code Repo for the Apple Security Research Device with all details provide
+- Open an Issue or Ask a Question
+
+Toybox Unstripped
+-----------
 ```
 nm -a com.example.cryptex.dstroot/usr/bin/toybox  | wc -l
      941
 ```
 ## START HERE
 
-Install the Pre-Built SRD DMG
+Install my Pre-Built SRD DMG
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/xsscx/srd/main/dmg/install.sh)"
 ```
